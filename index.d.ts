@@ -23,7 +23,7 @@ declare global {
     searchArtists?: (request: SearchRequest) => Promise<SearchArtistResult>;
     searchAlbums?: (request: SearchRequest) => Promise<SearchAlbumResult>;
     searchPlaylists?: (request: SearchRequest) => Promise<SearchPlaylistResult>;
-    getTrackUrl?: (song: ISong) => Promise<void>;
+    getTrackUrl?: (song: ISong) => Promise<string>;
     getPlaylistTracks?: (
       request: PlaylistTrackRequest
     ) => Promise<SearchTrackResult>;
@@ -92,6 +92,7 @@ declare global {
     apiId?: string;
     images?: IImage[];
     from?: string;
+    isUserPlaylist?: boolean;
   }
 
   interface IImage {
