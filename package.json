@@ -1,0 +1,9 @@
+{
+  "name": "audiogata-plugin-typings",
+  "version": "1.0.0",
+  "description": "Typings for the AudioGata Plugin API",
+  "main": "",
+  "scripts": {},
+  "author": "Elijah Green",
+  "license": "ISC"
+}
