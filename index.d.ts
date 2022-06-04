@@ -11,11 +11,11 @@ declare global {
     networkRequest(input: RequestInfo, init?: RequestInit): Promise<Response>;
     getPlugins: () => Promise<PluginInfo[]>;
     createNotification: (notification: NotificationMessage) => Promise<void>;
-    getNowPlayingTracks: () => Promise<ISong[]>;
-    setNowPlayingTracks: (tracks: ISong[]) => Promise<void>;
+    getNowPlayingTracks: () => Promise<Track[]>;
+    setNowPlayingTracks: (tracks: Track[]) => Promise<void>;
     installPlugins: (plugins: PluginInfo[]) => void;
-    getPlaylists: () => Promise<IPlaylist[]>;
-    addPlaylists: (playlists: IPlaylist[]) => Promise<void>;
+    getPlaylists: () => Promise<Playlist[]>;
+    addPlaylists: (playlists: Playlist[]) => Promise<void>;
 
     // Optional Methods
     searchAll?: (request: SearchRequest) => Promise<SearchAllResult>;
@@ -23,27 +23,27 @@ declare global {
     searchArtists?: (request: SearchRequest) => Promise<SearchArtistResult>;
     searchAlbums?: (request: SearchRequest) => Promise<SearchAlbumResult>;
     searchPlaylists?: (request: SearchRequest) => Promise<SearchPlaylistResult>;
-    getTrackUrl?: (song: ISong) => Promise<string>;
+    getTrackUrl?: (track: Track) => Promise<string>;
     getPlaylistTracks?: (
       request: PlaylistTrackRequest
     ) => Promise<SearchTrackResult>;
     onDeepLinkMessage?: (message: string) => Promise<void>;
     onUiMessage?: (message: any) => void;
-    play?: (song: ISong) => Promise<void>;
+    play?: (track: Track) => Promise<void>;
     setVolume?: (volume: number) => Promise<void>;
     pause?: () => Promise<void>;
     resume?: () => Promise<void>;
     seek?: (time: number) => Promise<void>;
-    getAlbumTracks?: (album: IAlbum) => Promise<ISong[]>;
-    getArtistAlbums?: (artist: IArtist) => Promise<IAlbum[]>;
+    getAlbumTracks?: (album: Album) => Promise<Track[]>;
+    getArtistAlbums?: (artist: Artist) => Promise<Album[]>;
     setPlaybackRate?: (rate: number) => Promise<void>;
     getUserPlaylists?: (
       request: UserPlaylistRequest
     ) => Promise<SearchPlaylistResult>;
-    onNowPlayingTracksAdded?: (track: ISong[]) => Promise<void>;
-    onNowPlayingTracksRemoved?: (track: ISong[]) => Promise<void>;
-    onNowPlayingTracksChanged?: (track: ISong[]) => Promise<void>;
-    onNowPlayingTracksSet?: (track: ISong[]) => Promise<void>;
+    onNowPlayingTracksAdded?: (track: Track[]) => Promise<void>;
+    onNowPlayingTracksRemoved?: (track: Track[]) => Promise<void>;
+    onNowPlayingTracksChanged?: (track: Track[]) => Promise<void>;
+    onNowPlayingTracksSet?: (track: Track[]) => Promise<void>;
   }
 
   interface PluginInfo {
@@ -56,7 +56,7 @@ declare global {
     optionsSameOrigin?: boolean;
   }
 
-  interface ISong {
+  interface Track {
     id?: string;
     name: string;
     source: string;
@@ -66,36 +66,36 @@ declare global {
     albumId?: string;
     artistId?: string;
     artistName?: string;
-    images: IImage[];
+    images: ImageInfo[];
   }
 
-  interface IAlbum {
+  interface Album {
     name: string;
     apiId: string;
     from: string;
     artistName?: string;
     artistId?: string;
-    images: IImage[];
+    images: ImageInfo[];
   }
 
-  interface IArtist {
+  interface Artist {
     name: string;
     apiId: string;
     from: string;
-    images: IImage[];
+    images: ImageInfo[];
   }
 
-  interface IPlaylist {
+  interface Playlist {
     id?: string;
     name: string;
-    songs?: ISong[];
+    tracks?: Track[];
     apiId?: string;
-    images?: IImage[];
+    images?: ImageInfo[];
     from?: string;
     isUserPlaylist?: boolean;
   }
 
-  interface IImage {
+  interface ImageInfo {
     url: string;
     height: number;
     width: number;
@@ -122,22 +122,22 @@ declare global {
   }
 
   interface SearchTrackResult {
-    items: ISong[];
+    items: Track[];
     pageInfo?: PageInfo;
   }
 
   interface SearchArtistResult {
-    items: IArtist[];
+    items: Artist[];
     pageInfo?: PageInfo;
   }
 
   interface SearchAlbumResult {
-    items: IAlbum[];
+    items: Album[];
     pageInfo?: PageInfo;
   }
 
   interface SearchPlaylistResult {
-    items: IPlaylist[];
+    items: Playlist[];
     pageInfo?: PageInfo;
   }
 
@@ -147,7 +147,7 @@ declare global {
   }
 
   interface PlaylistTrackRequest {
-    playlist: IPlaylist;
+    playlist: Playlist;
     page?: PageInfo;
   }
 
