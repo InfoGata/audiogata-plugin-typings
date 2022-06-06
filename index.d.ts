@@ -59,40 +59,43 @@ declare global {
   interface Track {
     id?: string;
     name: string;
-    source: string;
-    from?: string;
+    source?: string;
+    pluginId?: string;
     apiId?: string;
     duration?: number;
-    albumId?: string;
-    artistId?: string;
+    albumApiId?: string;
+    albumName?: string;
+    artistApiId?: string;
     artistName?: string;
-    images: ImageInfo[];
+    images?: ImageInfo[];
   }
 
   interface Album {
     name: string;
     apiId: string;
-    from: string;
+    pluginId?: string;
     artistName?: string;
-    artistId?: string;
-    images: ImageInfo[];
+    artistApiId?: string;
+    images?: ImageInfo[];
   }
 
   interface Artist {
     name: string;
     apiId: string;
-    from: string;
-    images: ImageInfo[];
+    pluginId?: string;
+    images?: ImageInfo[];
   }
 
-  interface Playlist {
+  interface PlaylistInfo {
     id?: string;
-    name: string;
-    tracks?: Track[];
-    apiId?: string;
     images?: ImageInfo[];
-    from?: string;
+    name?: string;
     isUserPlaylist?: boolean;
+    pluginId?: string;
+  }
+
+  interface Playlist extends PlaylistInfo {
+    tracks: Track[];
   }
 
   interface ImageInfo {
@@ -121,6 +124,20 @@ declare global {
     playlists?: SearchPlaylistResult;
   }
 
+  interface SearchRequest {
+    query: string;
+    page?: PageInfo;
+  }
+
+  interface PlaylistTrackRequest {
+    playlist: Playlist;
+    page?: PageInfo;
+  }
+
+  interface UserPlaylistRequest {
+    page?: PageInfo;
+  }
+
   interface SearchTrackResult {
     items: Track[];
     pageInfo?: PageInfo;
@@ -139,20 +156,6 @@ declare global {
   interface SearchPlaylistResult {
     items: Playlist[];
     pageInfo?: PageInfo;
-  }
-
-  interface SearchRequest {
-    query: string;
-    page?: PageInfo;
-  }
-
-  interface PlaylistTrackRequest {
-    playlist: Playlist;
-    page?: PageInfo;
-  }
-
-  interface UserPlaylistRequest {
-    page?: PageInfo;
   }
 }
 
