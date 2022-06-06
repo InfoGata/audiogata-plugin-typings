@@ -91,6 +91,7 @@ declare global {
     images?: ImageInfo[];
     name?: string;
     isUserPlaylist?: boolean;
+    apiId?: string;
     pluginId?: string;
   }
 
