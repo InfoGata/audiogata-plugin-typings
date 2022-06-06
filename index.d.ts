@@ -18,6 +18,12 @@ declare global {
     addPlaylists: (playlists: Playlist[]) => Promise<void>;
 
     // Optional Methods
+    onPlay?: (track: Track) => Promise<void>;
+    onSetVolume?: (volume: number) => Promise<void>;
+    onPause?: () => Promise<void>;
+    onResume?: () => Promise<void>;
+    onSeek?: (time: number) => Promise<void>;
+    onSetPlaybackRate?: (rate: number) => Promise<void>;
     searchAll?: (request: SearchRequest) => Promise<SearchAllResult>;
     searchTracks?: (request: SearchRequest) => Promise<SearchTrackResult>;
     searchArtists?: (request: SearchRequest) => Promise<SearchArtistResult>;
@@ -27,16 +33,8 @@ declare global {
     getPlaylistTracks?: (
       request: PlaylistTrackRequest
     ) => Promise<SearchTrackResult>;
-    onDeepLinkMessage?: (message: string) => Promise<void>;
-    onUiMessage?: (message: any) => void;
-    play?: (track: Track) => Promise<void>;
-    setVolume?: (volume: number) => Promise<void>;
-    pause?: () => Promise<void>;
-    resume?: () => Promise<void>;
-    seek?: (time: number) => Promise<void>;
     getAlbumTracks?: (album: Album) => Promise<Track[]>;
     getArtistAlbums?: (artist: Artist) => Promise<Album[]>;
-    setPlaybackRate?: (rate: number) => Promise<void>;
     getUserPlaylists?: (
       request: UserPlaylistRequest
     ) => Promise<SearchPlaylistResult>;
@@ -44,6 +42,8 @@ declare global {
     onNowPlayingTracksRemoved?: (track: Track[]) => Promise<void>;
     onNowPlayingTracksChanged?: (track: Track[]) => Promise<void>;
     onNowPlayingTracksSet?: (track: Track[]) => Promise<void>;
+    onDeepLinkMessage?: (message: string) => Promise<void>;
+    onUiMessage?: (message: any) => void;
   }
 
   interface PluginInfo {
