@@ -130,7 +130,7 @@ declare global {
   }
 
   interface PlaylistTrackRequest {
-    playlist: Playlist;
+    playlist: PlaylistInfo;
     page?: PageInfo;
   }
 
@@ -154,7 +154,7 @@ declare global {
   }
 
   interface SearchPlaylistResult {
-    items: Playlist[];
+    items: PlaylistInfo[];
     pageInfo?: PageInfo;
   }
 }
