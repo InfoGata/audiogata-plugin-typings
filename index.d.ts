@@ -38,6 +38,7 @@ declare global {
     onGetUserPlaylists?: (
       request: UserPlaylistRequest
     ) => Promise<SearchPlaylistResult>;
+    onGetTopItems: () => Promise<SearchAllResult>;
     onNowPlayingTracksAdded?: (track: Track[]) => Promise<void>;
     onNowPlayingTracksRemoved?: (track: Track[]) => Promise<void>;
     onNowPlayingTracksChanged?: (track: Track[]) => Promise<void>;
