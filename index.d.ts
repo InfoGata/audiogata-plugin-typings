@@ -16,26 +16,26 @@ declare global {
     installPlugins: (plugins: PluginInfo[]) => void;
     getPlaylists: () => Promise<Playlist[]>;
     addPlaylists: (playlists: Playlist[]) => Promise<void>;
-
-    // Optional Methods
     onPlay?: (track: Track) => Promise<void>;
     onSetVolume?: (volume: number) => Promise<void>;
     onPause?: () => Promise<void>;
     onResume?: () => Promise<void>;
     onSeek?: (time: number) => Promise<void>;
     onSetPlaybackRate?: (rate: number) => Promise<void>;
-    searchAll?: (request: SearchRequest) => Promise<SearchAllResult>;
-    searchTracks?: (request: SearchRequest) => Promise<SearchTrackResult>;
-    searchArtists?: (request: SearchRequest) => Promise<SearchArtistResult>;
-    searchAlbums?: (request: SearchRequest) => Promise<SearchAlbumResult>;
-    searchPlaylists?: (request: SearchRequest) => Promise<SearchPlaylistResult>;
-    getTrackUrl?: (track: Track) => Promise<string>;
-    getPlaylistTracks?: (
+    onSearchAll?: (request: SearchRequest) => Promise<SearchAllResult>;
+    onSearchTracks?: (request: SearchRequest) => Promise<SearchTrackResult>;
+    onSearchArtists?: (request: SearchRequest) => Promise<SearchArtistResult>;
+    onSearchAlbums?: (request: SearchRequest) => Promise<SearchAlbumResult>;
+    onSearchPlaylists?: (
+      request: SearchRequest
+    ) => Promise<SearchPlaylistResult>;
+    onGetTrackUrl?: (track: Track) => Promise<string>;
+    onGetPlaylistTracks?: (
       request: PlaylistTrackRequest
     ) => Promise<SearchTrackResult>;
-    getAlbumTracks?: (album: Album) => Promise<Track[]>;
-    getArtistAlbums?: (artist: Artist) => Promise<Album[]>;
-    getUserPlaylists?: (
+    onGetAlbumTracks?: (album: Album) => Promise<Track[]>;
+    onGetArtistAlbums?: (artist: Artist) => Promise<Album[]>;
+    onGetUserPlaylists?: (
       request: UserPlaylistRequest
     ) => Promise<SearchPlaylistResult>;
     onNowPlayingTracksAdded?: (track: Track[]) => Promise<void>;
