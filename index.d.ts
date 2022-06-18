@@ -7,7 +7,7 @@ declare global {
     getPluginId: () => Promise<string>;
     setTrackTime: (currentTime: number) => Promise<void>;
     isNetworkRequestCorsDisabled: () => Promise<boolean>;
-    getCorsProxy: () => Promise<string>;
+    getCorsProxy: () => Promise<string | undefined>;
     networkRequest(input: RequestInfo, init?: RequestInit): Promise<Response>;
     getPlugins: () => Promise<PluginInfo[]>;
     createNotification: (notification: NotificationMessage) => Promise<void>;
