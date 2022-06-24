@@ -30,9 +30,9 @@ declare global {
       request: SearchRequest
     ) => Promise<SearchPlaylistResult>;
     onGetTrackUrl?: (track: Track) => Promise<string>;
-    onGetPlaylistTracks?: (
+    onGetPlaylistTracks: (
       request: PlaylistTrackRequest
-    ) => Promise<SearchTrackResult>;
+    ) => Promise<PlaylistTracksResult>;
     onGetAlbumTracks?: (album: Album) => Promise<Track[]>;
     onGetArtistAlbums?: (artist: Artist) => Promise<Album[]>;
     onGetUserPlaylists?: (
@@ -143,6 +143,10 @@ declare global {
   interface SearchTrackResult {
     items: Track[];
     pageInfo?: PageInfo;
+  }
+
+  interface PlaylistTracksResult extends SearchTrackResult {
+    playlist?: PlaylistInfo;
   }
 
   interface SearchArtistResult {
