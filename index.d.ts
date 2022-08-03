@@ -29,7 +29,7 @@ declare global {
     onSearchPlaylists?: (
       request: SearchRequest
     ) => Promise<SearchPlaylistResult>;
-    onGetTrackUrl?: (track: Track) => Promise<string>;
+    onGetTrackUrl?: (request: GetTrackUrlRequest) => Promise<string>;
     onGetPlaylistTracks: (
       request: PlaylistTrackRequest
     ) => Promise<PlaylistTracksResult>;
@@ -166,6 +166,10 @@ declare global {
   interface SearchTrackResult {
     items: Track[];
     pageInfo?: PageInfo;
+  }
+
+  interface GetTrackUrlRequest {
+    apiId?: string;
   }
 
   interface PlaylistTracksResult extends SearchTrackResult {
