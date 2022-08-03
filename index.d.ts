@@ -16,7 +16,7 @@ declare global {
     installPlugins: (plugins: PluginInfo[]) => void;
     getPlaylists: () => Promise<Playlist[]>;
     addPlaylists: (playlists: Playlist[]) => Promise<void>;
-    onPlay?: (track: Track) => Promise<void>;
+    onPlay?: (track: PlayTrackRequest) => Promise<void>;
     onSetVolume?: (volume: number) => Promise<void>;
     onPause?: () => Promise<void>;
     onResume?: () => Promise<void>;
@@ -170,6 +170,10 @@ declare global {
 
   interface GetTrackUrlRequest {
     apiId?: string;
+  }
+  interface PlayTrackRequest {
+    apiId?: string;
+    source?: string;
   }
 
   interface PlaylistTracksResult extends SearchTrackResult {
