@@ -136,17 +136,18 @@ declare global {
   }
 
   interface PlaylistTrackRequest {
-    playlist: PlaylistInfo;
+    apiId?: string;
+    isUserPlaylist: boolean;
     page?: PageInfo;
   }
 
   interface AlbumTrackRequest {
-    album: Album;
+    apiId?: string;
     page?: PageInfo;
   }
 
   interface ArtistAlbumRequest {
-    artist: Artist;
+    apiId?: string;
     page?: PageInfo;
   }
 
