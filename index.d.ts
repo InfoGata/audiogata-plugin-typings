@@ -106,8 +106,8 @@ declare global {
 
   interface ImageInfo {
     url: string;
-    height: number;
-    width: number;
+    height?: number;
+    width?: number;
   }
 
   interface NotificationMessage {
