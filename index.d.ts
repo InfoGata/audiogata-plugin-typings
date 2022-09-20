@@ -13,7 +13,7 @@ declare global {
     createNotification: (notification: NotificationMessage) => Promise<void>;
     getNowPlayingTracks: () => Promise<Track[]>;
     setNowPlayingTracks: (tracks: Track[]) => Promise<void>;
-    installPlugins: (plugins: PluginInfo[]) => void;
+    installPlugins: (plugins: PluginInfo[]) => Promise<void>;
     getPlaylists: () => Promise<Playlist[]>;
     addPlaylists: (playlists: Playlist[]) => Promise<void>;
     onPlay?: (track: PlayTrackRequest) => Promise<void>;
