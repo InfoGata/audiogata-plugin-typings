@@ -174,6 +174,7 @@ declare global {
   interface PlayTrackRequest {
     apiId?: string;
     source?: string;
+    seekTime?: number;
   }
 
   interface PlaylistTracksResult extends SearchTrackResult {
