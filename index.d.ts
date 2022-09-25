@@ -2,53 +2,49 @@ declare global {
   const application: Application;
 
   interface Application {
-    postUiMessage: (msg: any) => Promise<void>;
-    endTrack: () => Promise<void>;
-    getPluginId: () => Promise<string>;
-    setTrackTime: (currentTime: number) => Promise<void>;
-    isNetworkRequestCorsDisabled: () => Promise<boolean>;
-    getCorsProxy: () => Promise<string | undefined>;
+    postUiMessage(msg: any): Promise<void>;
+    endTrack(): Promise<void>;
+    getPluginId(): Promise<string>;
+    setTrackTime(currentTime: number): Promise<void>;
+    isNetworkRequestCorsDisabled(): Promise<boolean>;
+    getCorsProxy(): Promise<string | undefined>;
     networkRequest(input: RequestInfo, init?: RequestInit): Promise<Response>;
-    getPlugins: () => Promise<PluginInfo[]>;
-    createNotification: (notification: NotificationMessage) => Promise<void>;
-    getNowPlayingTracks: () => Promise<Track[]>;
-    setNowPlayingTracks: (tracks: Track[]) => Promise<void>;
-    installPlugins: (plugins: PluginInfo[]) => Promise<void>;
-    getPlaylists: () => Promise<Playlist[]>;
-    addPlaylists: (playlists: Playlist[]) => Promise<void>;
-    onPlay?: (track: PlayTrackRequest) => Promise<void>;
-    onSetVolume?: (volume: number) => Promise<void>;
-    onPause?: () => Promise<void>;
-    onResume?: () => Promise<void>;
-    onSeek?: (time: number) => Promise<void>;
-    onSetPlaybackRate?: (rate: number) => Promise<void>;
-    onSearchAll?: (request: SearchRequest) => Promise<SearchAllResult>;
-    onSearchTracks?: (request: SearchRequest) => Promise<SearchTrackResult>;
-    onSearchArtists?: (request: SearchRequest) => Promise<SearchArtistResult>;
-    onSearchAlbums?: (request: SearchRequest) => Promise<SearchAlbumResult>;
-    onSearchPlaylists?: (
-      request: SearchRequest
-    ) => Promise<SearchPlaylistResult>;
-    onGetTrackUrl?: (request: GetTrackUrlRequest) => Promise<string>;
-    onGetPlaylistTracks: (
+    getPlugins(): Promise<PluginInfo[]>;
+    createNotification(notification: NotificationMessage): Promise<void>;
+    getNowPlayingTracks(): Promise<Track[]>;
+    setNowPlayingTracks(tracks: Track[]): Promise<void>;
+    installPlugins(plugins: PluginInfo[]): Promise<void>;
+    getPlaylists(): Promise<Playlist[]>;
+    addPlaylists(playlists: Playlist[]): Promise<void>;
+    onPlay?(track: PlayTrackRequest): Promise<void>;
+    onSetVolume?(volume: number): Promise<void>;
+    onPause?(): Promise<void>;
+    onResume?(): Promise<void>;
+    onSeek?(time: number): Promise<void>;
+    onSetPlaybackRate?(rate: number): Promise<void>;
+    onSearchAll?(request: SearchRequest): Promise<SearchAllResult>;
+    onSearchTracks?(request: SearchRequest): Promise<SearchTrackResult>;
+    onSearchArtists?(request: SearchRequest): Promise<SearchArtistResult>;
+    onSearchAlbums?(request: SearchRequest): Promise<SearchAlbumResult>;
+    onSearchPlaylists?(request: SearchRequest): Promise<SearchPlaylistResult>;
+    onGetTrackUrl?(request: GetTrackUrlRequest): Promise<string>;
+    onGetPlaylistTracks(
       request: PlaylistTrackRequest
-    ) => Promise<PlaylistTracksResult>;
-    onGetAlbumTracks?: (
-      request: AlbumTrackRequest
-    ) => Promise<AlbumTracksResult>;
-    onGetArtistAlbums?: (
+    ): Promise<PlaylistTracksResult>;
+    onGetAlbumTracks?(request: AlbumTrackRequest): Promise<AlbumTracksResult>;
+    onGetArtistAlbums?(
       request: ArtistAlbumRequest
-    ) => Promise<ArtistAlbumsResult>;
-    onGetUserPlaylists?: (
+    ): Promise<ArtistAlbumsResult>;
+    onGetUserPlaylists?(
       request: UserPlaylistRequest
-    ) => Promise<SearchPlaylistResult>;
-    onGetTopItems: () => Promise<SearchAllResult>;
-    onNowPlayingTracksAdded?: (track: Track[]) => Promise<void>;
-    onNowPlayingTracksRemoved?: (track: Track[]) => Promise<void>;
-    onNowPlayingTracksChanged?: (track: Track[]) => Promise<void>;
-    onNowPlayingTracksSet?: (track: Track[]) => Promise<void>;
-    onDeepLinkMessage?: (message: string) => Promise<void>;
-    onUiMessage?: (message: any) => void;
+    ): Promise<SearchPlaylistResult>;
+    onGetTopItems(): Promise<SearchAllResult>;
+    onNowPlayingTracksAdded?(track: Track[]): Promise<void>;
+    onNowPlayingTracksRemoved?(track: Track[]): Promise<void>;
+    onNowPlayingTracksChanged?(track: Track[]): Promise<void>;
+    onNowPlayingTracksSet?(track: Track[]): Promise<void>;
+    onDeepLinkMessage?(message: string): Promise<void>;
+    onUiMessage?(message: any): void;
   }
 
   interface PluginInfo {
