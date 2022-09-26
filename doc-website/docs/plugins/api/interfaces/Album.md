@@ -12,11 +12,15 @@ custom_edit_url: null
 
 • **apiId**: `string`
 
+Id from third party service this Album was retrieved from.
+
 ___
 
 ### artistApiId
 
 • `Optional` **artistApiId**: `string`
+
+Id of the artist from the third party service this album came from
 
 ___
 
@@ -24,11 +28,15 @@ ___
 
 • `Optional` **artistName**: `string`
 
+Name of artist where this track came from
+
 ___
 
 ### images
 
 • `Optional` **images**: [`ImageInfo`](ImageInfo.md)[]
+
+Images associated with this album
 
 ___
 
@@ -36,8 +44,12 @@ ___
 
 • **name**: `string`
 
+Name of Album
+
 ___
 
 ### pluginId
 
 • `Optional` **pluginId**: `string`
+
+Plugin Id of plugin where Album was retrieved from. Set by AudioGata.

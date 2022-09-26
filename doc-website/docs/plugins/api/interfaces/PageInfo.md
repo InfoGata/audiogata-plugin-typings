@@ -12,11 +12,15 @@ custom_edit_url: null
 
 • `Optional` **nextPage**: `string`
 
+Optional string containing information about next page. For example, a url to the next page.
+
 ___
 
 ### offset
 
 • **offset**: `number`
+
+Current
 
 ___
 
@@ -24,14 +28,20 @@ ___
 
 • `Optional` **prevPage**: `string`
 
+Optional string containing information about previous page. For example, a url to the next page.
+
 ___
 
 ### resultsPerPage
 
 • **resultsPerPage**: `number`
 
+Number of results on current page
+
 ___
 
 ### totalResults
 
 • **totalResults**: `number`
+
+Total number of results returned

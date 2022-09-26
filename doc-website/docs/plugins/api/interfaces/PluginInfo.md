@@ -12,11 +12,15 @@ custom_edit_url: null
 
 • `Optional` **description**: `string`
 
+Options page html code
+
 ___
 
 ### id
 
 • `Optional` **id**: `string`
+
+Unique Id of Plugin
 
 ___
 
@@ -24,11 +28,15 @@ ___
 
 • **name**: `string`
 
+Name of plugin
+
 ___
 
 ### optionsHtml
 
 • `Optional` **optionsHtml**: `string`
+
+Player page html code
 
 ___
 
@@ -36,14 +44,23 @@ ___
 
 • `Optional` **optionsSameOrigin**: `boolean`
 
+Determines whether the origin of the options iframe
+should be pluginId.audiogata.com or should be null.
+Setting to true may be useful for running some libraries
+on options page.
+
 ___
 
 ### script
 
 • **script**: `string`
 
+Javascript code of plugin
+
 ___
 
 ### version
 
 • `Optional` **version**: `string`
+
+Description of plugin

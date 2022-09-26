@@ -12,6 +12,8 @@ custom_edit_url: null
 
 • **message**: `string`
 
+Message to show
+
 ___
 
 ### type

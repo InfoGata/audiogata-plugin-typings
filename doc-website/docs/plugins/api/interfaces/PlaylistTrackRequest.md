@@ -18,6 +18,8 @@ ___
 
 • **isUserPlaylist**: `boolean`
 
+Determine whether this a private playlist only associated with a user.
+
 ___
 
 ### page

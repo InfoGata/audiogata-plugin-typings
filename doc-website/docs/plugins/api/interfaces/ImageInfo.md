@@ -18,6 +18,8 @@ ___
 
 • **url**: `string`
 
+Url of image
+
 ___
 
 ### width

@@ -7,4 +7,4 @@ sidebar_position: 1
 
 ### About
 
-AudioGata is plugin based audio player.
+AudioGata is a plugin based audio player.
