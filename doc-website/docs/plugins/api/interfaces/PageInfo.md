@@ -42,6 +42,6 @@ ___
 
 ### totalResults
 
-• **totalResults**: `number`
+• `Optional` **totalResults**: `number`
 
 Total number of results returned

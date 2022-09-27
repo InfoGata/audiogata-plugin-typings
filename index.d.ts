@@ -343,7 +343,7 @@ declare global {
     /**
      * Total number of results returned
      */
-    totalResults: number;
+    totalResults?: number;
     /**
      * Number of results on current page
      */
