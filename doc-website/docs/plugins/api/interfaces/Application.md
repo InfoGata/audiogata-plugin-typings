@@ -407,6 +407,11 @@ ___
 
 Callback method to return album search results on `/search`
 
+**`Remarks`**
+
+This method must be set for album pagination to work on the
+`/search` page
+
 #### Parameters
 
 | Name | Type |
@@ -424,6 +429,11 @@ ___
 ▸ `Optional` **onSearchAll**(`request`): `Promise`<[`SearchAllResult`](SearchAllResult.md)\>
 
 Callback method to return search results on `/search`
+
+**`Remarks`**
+
+This method must be set for the plugin to show on the
+`/search` page
 
 #### Parameters
 
@@ -443,6 +453,11 @@ ___
 
 Callback method to return artist search results on `/search`
 
+**`Remarks`**
+
+This method must be set for artist pagination to work on the
+`/search` page
+
 #### Parameters
 
 | Name | Type |
@@ -461,6 +476,11 @@ ___
 
 Callback method to return playlist search results on `/search`
 
+**`Remarks`**
+
+This method must be set for playlist pagination to work on the
+`/search` page
+
 #### Parameters
 
 | Name | Type |
@@ -478,6 +498,11 @@ ___
 ▸ `Optional` **onSearchTracks**(`request`): `Promise`<[`SearchTrackResult`](SearchTrackResult.md)\>
 
 Callback method to return track search results on `/search`
+
+**`Remarks`**
+
+This method must be set for track pagination to work on the
+`/search` page
 
 #### Parameters
 
@@ -603,7 +628,7 @@ ___
 
 ▸ **setTrackTime**(`currentTime`): `Promise`<`void`\>
 
-When plugin is actining as an embedded player, used to show user current track time.
+When plugin is acting as an embedded player, used to show user current track time.
 
 #### Parameters
 
