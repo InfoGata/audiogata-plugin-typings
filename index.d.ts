@@ -181,15 +181,15 @@ declare global {
      */
     script: string;
     /**
-     * Description of plugin
+     * Version number
      */
     version?: string;
     /**
-     * Options page html code
+     * Description of plugin
      */
     description?: string;
     /**
-     * Player page html code
+     * Options page html code
      */
     optionsHtml?: string;
     /**
@@ -349,7 +349,7 @@ declare global {
      */
     resultsPerPage: number;
     /**
-     * Current
+     * Current offset in the number of totalResults
      */
     offset: number;
     /**

@@ -25,13 +25,19 @@ The plugin's unique. If no id is provided, a random id will be used instead.
 
 ## name: string
 
+Name of plugin
+
 ## description?: string
+
+Description of plugin.
 
 ## version?: string
 
+Version number of plugin.
+
 ## script: string
 
-Javascript file containing
+Javascript file containing the plugin code.
 
 ## options?: string
 

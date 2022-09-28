@@ -12,7 +12,7 @@ custom_edit_url: null
 
 • `Optional` **description**: `string`
 
-Options page html code
+Description of plugin
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 • `Optional` **optionsHtml**: `string`
 
-Player page html code
+Options page html code
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 • `Optional` **version**: `string`
 
-Description of plugin
+Version number
