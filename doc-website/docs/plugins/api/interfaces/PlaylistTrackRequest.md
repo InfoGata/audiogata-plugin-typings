@@ -22,6 +22,6 @@ Determine whether this a private playlist only associated with a user.
 
 ___
 
-### page
+### pageInfo
 
-• `Optional` **page**: [`PageInfo`](PageInfo.md)
+• `Optional` **pageInfo**: [`PageInfo`](PageInfo.md)

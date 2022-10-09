@@ -8,6 +8,6 @@ custom_edit_url: null
 
 ## Properties
 
-### page
+### pageInfo
 
-• `Optional` **page**: [`PageInfo`](PageInfo.md)
+• `Optional` **pageInfo**: [`PageInfo`](PageInfo.md)

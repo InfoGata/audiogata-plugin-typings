@@ -387,7 +387,7 @@ declare global {
 
   interface SearchRequest {
     query: string;
-    page?: PageInfo;
+    pageInfo?: PageInfo;
   }
 
   interface PlaylistTrackRequest {
@@ -396,17 +396,17 @@ declare global {
      * Determine whether this a private playlist only associated with a user.
      */
     isUserPlaylist: boolean;
-    page?: PageInfo;
+    pageInfo?: PageInfo;
   }
 
   interface AlbumTrackRequest {
     apiId?: string;
-    page?: PageInfo;
+    pageInfo?: PageInfo;
   }
 
   interface ArtistAlbumRequest {
     apiId?: string;
-    page?: PageInfo;
+    pageInfo?: PageInfo;
   }
 
   interface ArtistAlbumsResult extends SearchAlbumResult {
@@ -418,7 +418,7 @@ declare global {
   }
 
   interface UserPlaylistRequest {
-    page?: PageInfo;
+    pageInfo?: PageInfo;
   }
 
   interface SearchTrackResult {
