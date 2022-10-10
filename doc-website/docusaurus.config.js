@@ -130,7 +130,7 @@ module.exports = {
         out: "plugins/api",
         sidebar: {
           categoryLabel: "Plugin API",
-          position: 2,
+          position: 3,
         },
       },
     ],
