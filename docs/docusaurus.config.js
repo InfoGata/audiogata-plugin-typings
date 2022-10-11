@@ -8,8 +8,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "AudioGata",
   tagline: "Plugin based audio",
-  url: "https://your-docusaurus-test-site.com",
-  baseUrl: "/",
+  url: "https://infogata.github.io",
+  baseUrl: "/audiogata-plugin-typings/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
@@ -37,8 +37,8 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          //editUrl:
-          //  "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl:
+            "https://github.com/InfoGata/audiogata-plugin-typings/tree/master/docs",
         },
         blog: false,
         theme: {
@@ -65,7 +65,7 @@ const config = {
             label: "Tutorial",
           },
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/InfoGata/audiogata-plugin-typings",
             label: "GitHub",
             position: "right",
           },
@@ -79,29 +79,25 @@ const config = {
             items: [
               {
                 label: "Tutorial",
-                to: "/docs/intro",
+                to: "/",
               },
             ],
           },
-          // {
-          //   title: "Community",
-          //   items: [
-          //     {
-          //       label: "Discord",
-          //       href: "https://discordapp.com/invite/docusaurus",
-          //     },
-          //     {
-          //       label: "Twitter",
-          //       href: "https://twitter.com/docusaurus",
-          //     },
-          //   ],
-          // },
+          {
+            title: "Community",
+            items: [
+              {
+                label: "Twitter",
+                href: "https://twitter.com/info_gata",
+              },
+            ],
+          },
           {
             title: "More",
             items: [
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/InfoGata/audiogata-plugin-typings",
               },
             ],
           },
