@@ -1,10 +1,22 @@
 {
   "name": "audiogata-plugin-typings",
+  "homepage": "https://github.com/InfoGata/audiogata-plugin-typings",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InfoGata/audiogata-plugin-typings.git"
+  },
+  "bugs": {
+    "url": "https://github.com/InfoGata/audiogata-plugin-typings/issues"
+  },
   "version": "1.0.0",
   "description": "Typings for the AudioGata Plugin API",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {},
   "author": "Elijah Green",
-  "license": "ISC"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
