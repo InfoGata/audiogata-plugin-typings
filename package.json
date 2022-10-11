@@ -12,7 +12,9 @@
   "description": "Typings for the AudioGata Plugin API",
   "main": "index.js",
   "types": "index.d.ts",
-  "scripts": {},
+  "scripts": {
+    "test": ""
+  },
   "author": "Elijah Green",
   "license": "MIT",
   "publishConfig": {
