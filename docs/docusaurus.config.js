@@ -78,7 +78,7 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
+                label: "AudioGata",
                 to: "/",
               },
             ],
