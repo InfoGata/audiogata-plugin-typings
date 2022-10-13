@@ -2,7 +2,7 @@
 
 [![npm (scoped)](https://img.shields.io/npm/v/@infogata/audiogata-plugin-typings)](https://www.npmjs.com/package/@infogata/audiogata-plugin-typings)
 
-Types for [audiogata](https://www.audiogata.com) plugins.
+Types for [audiogata](https://github.com/InfoGata/audiogata) plugins.
 
 ## Installation
 
