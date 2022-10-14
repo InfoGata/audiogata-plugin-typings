@@ -109,6 +109,18 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+  themes: [
+    // ... Your other themes.
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        docsRouteBasePath: "/",
+        indexDocs: true,
+        indexBlog: false,
+      },
+    ],
+  ],
 };
 
 module.exports = {
