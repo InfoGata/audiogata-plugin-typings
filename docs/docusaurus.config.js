@@ -59,12 +59,6 @@ const config = {
         },
         items: [
           {
-            type: "doc",
-            docId: "intro",
-            position: "left",
-            label: "AudioGata",
-          },
-          {
             href: "https://github.com/InfoGata/audiogata-plugin-typings",
             label: "GitHub",
             position: "right",
