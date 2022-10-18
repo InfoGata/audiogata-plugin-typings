@@ -15,7 +15,8 @@ Example:
   "description": "description",
   "version": "1.1.1",
   "script": "dist/script.js",
-  "options": "dist/options.html"
+  "options": "dist/options.html",
+  "updateUrl": "https://example.com/manifest.json"
 }
 ```
 
@@ -42,3 +43,7 @@ Javascript file containing the plugin code.
 ## options?: string
 
 Optional HTML file for the plugin's options page.
+
+## updateUrl?: string
+
+Optional url to get future updated versions of the manifest.json file.
