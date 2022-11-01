@@ -15,6 +15,9 @@ custom_edit_url: null
 - [Artist](interfaces/Artist.md)
 - [ArtistAlbumRequest](interfaces/ArtistAlbumRequest.md)
 - [ArtistAlbumsResult](interfaces/ArtistAlbumsResult.md)
+- [Filter](interfaces/Filter.md)
+- [FilterInfo](interfaces/FilterInfo.md)
+- [FilterOption](interfaces/FilterOption.md)
 - [GetTrackUrlRequest](interfaces/GetTrackUrlRequest.md)
 - [ImageInfo](interfaces/ImageInfo.md)
 - [NotificationMessage](interfaces/NotificationMessage.md)
@@ -30,9 +33,16 @@ custom_edit_url: null
 - [SearchArtistResult](interfaces/SearchArtistResult.md)
 - [SearchPlaylistResult](interfaces/SearchPlaylistResult.md)
 - [SearchRequest](interfaces/SearchRequest.md)
+- [SearchResult](interfaces/SearchResult.md)
 - [SearchTrackResult](interfaces/SearchTrackResult.md)
 - [Track](interfaces/Track.md)
 - [UserPlaylistRequest](interfaces/UserPlaylistRequest.md)
+
+## Type Aliases
+
+### FilterType
+
+Ƭ **FilterType**: ``"radio"`` \| ``"select"`` \| ``"text"``
 
 ## Variables
 

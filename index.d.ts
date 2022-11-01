@@ -386,8 +386,18 @@ declare global {
   }
 
   interface SearchRequest {
+    /**
+     * Search query used to search things like videos, channels, etc.
+     */
     query: string;
+    /**
+     * Current page to search.
+     */
     pageInfo?: PageInfo;
+    /**
+     * Current filters to search based on.
+     */
+    filterInfo?: FilterInfo;
   }
 
   interface PlaylistTrackRequest {
@@ -421,9 +431,13 @@ declare global {
     pageInfo?: PageInfo;
   }
 
-  interface SearchTrackResult {
-    items: Track[];
+  interface SearchResult {
+    filterInfo?: FilterInfo;
     pageInfo?: PageInfo;
+  }
+
+  interface SearchTrackResult extends SearchResult {
+    items: Track[];
   }
 
   interface GetTrackUrlRequest {
@@ -439,19 +453,55 @@ declare global {
     playlist?: PlaylistInfo;
   }
 
-  interface SearchArtistResult {
+  interface SearchArtistResult extends SearchResult {
     items: Artist[];
-    pageInfo?: PageInfo;
   }
 
-  interface SearchAlbumResult {
+  interface SearchAlbumResult extends SearchResult {
     items: Album[];
-    pageInfo?: PageInfo;
   }
 
-  interface SearchPlaylistResult {
+  interface SearchPlaylistResult extends SearchResult {
     items: PlaylistInfo[];
-    pageInfo?: PageInfo;
+  }
+
+  /**
+   * Information used for filtering in search requests.
+   */
+  interface FilterInfo {
+    filters: Filter[];
+  }
+
+  type FilterType = "radio" | "select" | "text";
+
+  interface Filter {
+    /**
+     * Unique identifier of filter.
+     */
+    id: string;
+    /**
+     * Name of filter that will be displayed to user.
+     */
+    displayName: string;
+    /**
+     * Type of filter used to determine if filter will be displayed
+     * as a radio field, select tag, or text field.
+     */
+    type: FilterType;
+    /**
+     * Value that this filter is set to.
+     */
+    value?: string;
+    /**
+     * Selectable options for filter used when filter
+     * is type "radio" or "select"
+     */
+    options?: FilterOption[];
+  }
+
+  interface FilterOption {
+    displayName: string;
+    value: string;
   }
 }
 

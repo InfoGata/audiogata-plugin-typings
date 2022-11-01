@@ -8,13 +8,25 @@ custom_edit_url: null
 
 ## Hierarchy
 
-- **`SearchTrackResult`**
+- [`SearchResult`](SearchResult.md)
 
-  ↳ [`AlbumTracksResult`](AlbumTracksResult.md)
+  ↳ **`SearchTrackResult`**
 
-  ↳ [`PlaylistTracksResult`](PlaylistTracksResult.md)
+  ↳↳ [`AlbumTracksResult`](AlbumTracksResult.md)
+
+  ↳↳ [`PlaylistTracksResult`](PlaylistTracksResult.md)
 
 ## Properties
+
+### filterInfo
+
+• `Optional` **filterInfo**: [`FilterInfo`](FilterInfo.md)
+
+#### Inherited from
+
+[SearchResult](SearchResult.md).[filterInfo](SearchResult.md#filterinfo)
+
+___
 
 ### items
 
@@ -25,3 +37,7 @@ ___
 ### pageInfo
 
 • `Optional` **pageInfo**: [`PageInfo`](PageInfo.md)
+
+#### Inherited from
+
+[SearchResult](SearchResult.md).[pageInfo](SearchResult.md#pageinfo)

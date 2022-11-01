@@ -20,6 +20,16 @@ custom_edit_url: null
 
 ___
 
+### filterInfo
+
+• `Optional` **filterInfo**: [`FilterInfo`](FilterInfo.md)
+
+#### Inherited from
+
+[SearchAlbumResult](SearchAlbumResult.md).[filterInfo](SearchAlbumResult.md#filterinfo)
+
+___
+
 ### items
 
 • **items**: [`Album`](Album.md)[]

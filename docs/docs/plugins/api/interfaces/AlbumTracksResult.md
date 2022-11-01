@@ -20,6 +20,16 @@ custom_edit_url: null
 
 ___
 
+### filterInfo
+
+• `Optional` **filterInfo**: [`FilterInfo`](FilterInfo.md)
+
+#### Inherited from
+
+[SearchTrackResult](SearchTrackResult.md).[filterInfo](SearchTrackResult.md#filterinfo)
+
+___
+
 ### items
 
 • **items**: [`Track`](Track.md)[]
