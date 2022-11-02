@@ -68,6 +68,18 @@ Get cors proxy configured in settings.
 
 ___
 
+### getLocale
+
+▸ **getLocale**(): `Promise`<`string`\>
+
+Get locale configured in settings.
+
+#### Returns
+
+`Promise`<`string`\>
+
+___
+
 ### getNowPlayingTracks
 
 ▸ **getNowPlayingTracks**(): `Promise`<[`Track`](Track.md)[]\>

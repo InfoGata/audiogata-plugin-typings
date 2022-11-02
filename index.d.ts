@@ -31,6 +31,10 @@ declare global {
      */
     getCorsProxy(): Promise<string | undefined>;
     /**
+     * Get locale configured in settings.
+     */
+    getLocale(): Promise<string>;
+    /**
      * Get user's currently installed plugins.
      */
     getPlugins(): Promise<PluginInfo[]>;
