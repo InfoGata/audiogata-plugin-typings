@@ -16,6 +16,14 @@ Description of plugin
 
 ___
 
+### homepage
+
+• `Optional` **homepage**: `string`
+
+URL for the plugin's home page.
+
+___
+
 ### id
 
 • `Optional` **id**: `string`
