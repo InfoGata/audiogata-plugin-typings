@@ -240,7 +240,7 @@ declare global {
     name: string;
     source?: string;
     /**
-     * Images associated with this Track
+     * Plugin Id of plugin where Track was retrieved from. Set by AudioGata.
      */
     pluginId?: string;
     /**
@@ -341,7 +341,7 @@ declare global {
      */
     apiId?: string;
     /**
-     * Plugin Id of plugin where Playlist was retrieved from. Set by VideoGata.
+     * Plugin Id of plugin where Playlist was retrieved from. Set by AudioGata.
      */
     pluginId?: string;
   }

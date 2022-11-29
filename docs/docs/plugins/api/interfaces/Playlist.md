@@ -78,7 +78,7 @@ ___
 
 • `Optional` **pluginId**: `string`
 
-Plugin Id of plugin where Playlist was retrieved from. Set by VideoGata.
+Plugin Id of plugin where Playlist was retrieved from. Set by AudioGata.
 
 #### Inherited from
 

@@ -84,7 +84,7 @@ ___
 
 • `Optional` **pluginId**: `string`
 
-Images associated with this Track
+Plugin Id of plugin where Track was retrieved from. Set by AudioGata.
 
 ___
 
