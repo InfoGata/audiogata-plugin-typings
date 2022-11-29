@@ -132,6 +132,10 @@ declare global {
      */
     onGetTrackUrl?(request: GetTrackUrlRequest): Promise<string>;
     /**
+     * Callback method to get track information. Used on `/track/:id`
+     */
+    onGetTrack?(request: GetTrackRequest): Promise<Track>;
+    /**
      * Callback method that gets a playlist's tracks.  Used on `/plugins/:pluginId/playlists/:apiId`
      */
     onGetPlaylistTracks(
@@ -471,6 +475,10 @@ declare global {
 
   interface SearchPlaylistResult extends SearchResult {
     items: PlaylistInfo[];
+  }
+
+  interface GetTrackRequest {
+    apiId: string;
   }
 
   /**

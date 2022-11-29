@@ -261,6 +261,24 @@ Callback method to return items to display on Home page.
 
 ___
 
+### onGetTrack
+
+▸ `Optional` **onGetTrack**(`request`): `Promise`<[`Track`](Track.md)\>
+
+Callback method to get track information. Used on `/track/:id`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `request` | [`GetTrackRequest`](GetTrackRequest.md) |
+
+#### Returns
+
+`Promise`<[`Track`](Track.md)\>
+
+___
+
 ### onGetTrackUrl
 
 ▸ `Optional` **onGetTrackUrl**(`request`): `Promise`<`string`\>
