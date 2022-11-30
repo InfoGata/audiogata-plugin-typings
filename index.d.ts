@@ -55,9 +55,13 @@ declare global {
      */
     setNowPlayingTracks(tracks: Track[]): Promise<void>;
     /**
-     * Get the user's current playlists.
+     * Get the user's current playlists including tracks.
      */
     getPlaylists(): Promise<Playlist[]>;
+    /**
+     * Get the users's current playlists metadata without tracks.
+     */
+    getPlaylistsInfo(): Promise<PlaylistInfo[]>;
     /**
      * Adds or updates playlists. Playlists with the same id are updated.
      */

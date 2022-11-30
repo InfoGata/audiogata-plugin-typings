@@ -96,11 +96,23 @@ ___
 
 ▸ **getPlaylists**(): `Promise`<[`Playlist`](Playlist.md)[]\>
 
-Get the user's current playlists.
+Get the user's current playlists including tracks.
 
 #### Returns
 
 `Promise`<[`Playlist`](Playlist.md)[]\>
+
+___
+
+### getPlaylistsInfo
+
+▸ **getPlaylistsInfo**(): `Promise`<[`PlaylistInfo`](PlaylistInfo.md)[]\>
+
+Get the users's current playlists metadata without tracks.
+
+#### Returns
+
+`Promise`<[`PlaylistInfo`](PlaylistInfo.md)[]\>
 
 ___
 
