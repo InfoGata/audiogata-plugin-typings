@@ -67,6 +67,12 @@ declare global {
      */
     addPlaylists(playlists: Playlist[]): Promise<void>;
     /**
+     * Adds tracks to a playlist
+     * @param playlistId id of playlist
+     * @param tracks Tracks being added to playlist
+     */
+    addTracksToPlaylist(playlistId: string, tracks: Track[]): Promise<void>;
+    /**
      * Callback method to play the track using an embedded player in the plugin.
      * @param track The Track to play
      */

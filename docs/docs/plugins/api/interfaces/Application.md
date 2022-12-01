@@ -26,6 +26,25 @@ Adds or updates playlists. Playlists with the same id are updated.
 
 ___
 
+### addTracksToPlaylist
+
+▸ **addTracksToPlaylist**(`playlistId`, `tracks`): `Promise`<`void`\>
+
+Adds tracks to a playlist
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `playlistId` | `string` | id of playlist |
+| `tracks` | [`Track`](Track.md)[] | Tracks being added to playlist |
+
+#### Returns
+
+`Promise`<`void`\>
+
+___
+
 ### createNotification
 
 ▸ **createNotification**(`notification`): `Promise`<`void`\>
