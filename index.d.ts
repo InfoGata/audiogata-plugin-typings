@@ -172,6 +172,16 @@ declare global {
      */
     onGetTopItems(): Promise<SearchAllResult>;
     /**
+     * Callback method that checks to see if url can be parsed by plugin
+     * so that onLookupPlaylistUrl returns results
+     */
+    onCanParseUrl?(url: string, type: ParseUrlType): Promise<boolean>;
+    /**
+     * Callback url that takes a url and returns a playlist.
+     * Used on the `/playlists` page
+     */
+    onLookupPlaylistUrl?(url: string): Promise<Playlist>;
+    /**
      * Callback method to detect when new tracks got added to Now Playing queue
      * @param tracks Tracks that got added to queue
      */
@@ -529,6 +539,8 @@ declare global {
     displayName: string;
     value: string;
   }
+
+  type ParseUrlType = "playlist";
 }
 
 export {};

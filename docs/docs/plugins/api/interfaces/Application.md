@@ -208,6 +208,26 @@ Make a networkRequest from parent AudioGata frame rather from plugin frame.
 
 ___
 
+### onCanParseUrl
+
+▸ `Optional` **onCanParseUrl**(`url`, `type`): `Promise`<`boolean`\>
+
+Callback method that checks to see if url can be parsed by plugin
+so that onLookupPlaylistUrl returns results
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `url` | `string` |
+| `type` | ``"playlist"`` |
+
+#### Returns
+
+`Promise`<`boolean`\>
+
+___
+
 ### onDeepLinkMessage
 
 ▸ `Optional` **onDeepLinkMessage**(`message`): `Promise`<`void`\>
@@ -345,6 +365,25 @@ Callback method that gets user playlists.  Used on `/plugins/:pluginId/playlists
 #### Returns
 
 `Promise`<[`SearchPlaylistResult`](SearchPlaylistResult.md)\>
+
+___
+
+### onLookupPlaylistUrl
+
+▸ `Optional` **onLookupPlaylistUrl**(`url`): `Promise`<[`Playlist`](Playlist.md)\>
+
+Callback url that takes a url and returns a playlist.
+Used on the `/playlists` page
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `url` | `string` |
+
+#### Returns
+
+`Promise`<[`Playlist`](Playlist.md)\>
 
 ___
 
