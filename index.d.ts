@@ -177,8 +177,8 @@ declare global {
      */
     onCanParseUrl?(url: string, type: ParseUrlType): Promise<boolean>;
     /**
-     * Callback url that takes a url and returns a playlist.
-     * Used on the `/playlists` page
+     * Callback method that takes a url and returns a playlist.
+     * Used on the `/playlists` page.
      */
     onLookupPlaylistUrl?(url: string): Promise<Playlist>;
     /**
