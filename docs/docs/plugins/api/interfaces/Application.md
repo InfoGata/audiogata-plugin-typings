@@ -372,8 +372,8 @@ ___
 
 ▸ `Optional` **onLookupPlaylistUrl**(`url`): `Promise`<[`Playlist`](Playlist.md)\>
 
-Callback url that takes a url and returns a playlist.
-Used on the `/playlists` page
+Callback method that takes a url and returns a playlist.
+Used on the `/playlists` page.
 
 #### Parameters
 
