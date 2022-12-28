@@ -8,6 +8,12 @@ custom_edit_url: null
 
 ## Properties
 
+### addtionalArtists
+
+• `Optional` **addtionalArtists**: [`ArtistInfo`](ArtistInfo.md)[]
+
+___
+
 ### apiId
 
 • **apiId**: `string`

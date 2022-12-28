@@ -291,6 +291,7 @@ declare global {
      * Images associated with this track
      */
     images?: ImageInfo[];
+    addtionalArtists?: ArtistInfo[];
   }
 
   interface Album {
@@ -318,6 +319,7 @@ declare global {
      * Images associated with this album
      */
     images?: ImageInfo[];
+    addtionalArtists?: ArtistInfo[];
   }
 
   interface Artist {
@@ -337,6 +339,17 @@ declare global {
      * Images associated with this Artist
      */
     images?: ImageInfo[];
+  }
+
+  interface ArtistInfo {
+    /**
+     * Name of artist
+     */
+    name: string;
+    /**
+     * Id of the artist
+     */
+    apiId?: string;
   }
 
   interface PlaylistInfo {

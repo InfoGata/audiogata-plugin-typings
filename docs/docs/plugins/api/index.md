@@ -15,6 +15,7 @@ custom_edit_url: null
 - [Artist](interfaces/Artist.md)
 - [ArtistAlbumRequest](interfaces/ArtistAlbumRequest.md)
 - [ArtistAlbumsResult](interfaces/ArtistAlbumsResult.md)
+- [ArtistInfo](interfaces/ArtistInfo.md)
 - [Filter](interfaces/Filter.md)
 - [FilterInfo](interfaces/FilterInfo.md)
 - [FilterOption](interfaces/FilterOption.md)
