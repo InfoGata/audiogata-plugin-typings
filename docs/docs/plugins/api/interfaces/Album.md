@@ -62,6 +62,14 @@ Name of Album
 
 ___
 
+### originalUrl
+
+• `Optional` **originalUrl**: `string`
+
+Url that points to third party service where to album was retrieved from
+
+___
+
 ### pluginId
 
 • `Optional` **pluginId**: `string`

@@ -40,6 +40,14 @@ Name of Artist
 
 ___
 
+### originalUrl
+
+• `Optional` **originalUrl**: `string`
+
+Url that points to third party service where to Artist was retrieved from
+
+___
+
 ### pluginId
 
 • `Optional` **pluginId**: `string`

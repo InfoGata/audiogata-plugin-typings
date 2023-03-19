@@ -54,6 +54,14 @@ Name of playlist
 
 ___
 
+### originalUrl
+
+• `Optional` **originalUrl**: `string`
+
+Url that points to third party service where to Playlist was retrieved from
+
+___
+
 ### pluginId
 
 • `Optional` **pluginId**: `string`

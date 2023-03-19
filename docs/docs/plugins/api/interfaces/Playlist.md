@@ -74,6 +74,18 @@ Name of playlist
 
 ___
 
+### originalUrl
+
+• `Optional` **originalUrl**: `string`
+
+Url that points to third party service where to Playlist was retrieved from
+
+#### Inherited from
+
+[PlaylistInfo](PlaylistInfo.md).[originalUrl](PlaylistInfo.md#originalurl)
+
+___
+
 ### pluginId
 
 • `Optional` **pluginId**: `string`

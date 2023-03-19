@@ -51,7 +51,7 @@ declare global {
      */
     getNowPlayingTracks(): Promise<Track[]>;
     /**
-     * Set the user's Now Plyaing Queue track list;
+     * Set the user's Now Playing Queue track list;
      */
     setNowPlayingTracks(tracks: Track[]): Promise<void>;
     /**
@@ -292,6 +292,10 @@ declare global {
      */
     images?: ImageInfo[];
     addtionalArtists?: ArtistInfo[];
+    /**
+     * Url that points to third party service where to track was retrieved from
+     */
+    originalUrl?: string;
   }
 
   interface Album {
@@ -324,6 +328,10 @@ declare global {
      */
     images?: ImageInfo[];
     addtionalArtists?: ArtistInfo[];
+    /**
+     * Url that points to third party service where to album was retrieved from
+     */
+    originalUrl?: string;
   }
 
   interface Artist {
@@ -347,6 +355,10 @@ declare global {
      * Images associated with this Artist
      */
     images?: ImageInfo[];
+    /**
+     * Url that points to third party service where to Artist was retrieved from
+     */
+    originalUrl?: string;
   }
 
   interface ArtistInfo {
@@ -385,6 +397,10 @@ declare global {
      * Plugin Id of plugin where Playlist was retrieved from. Set by AudioGata.
      */
     pluginId?: string;
+    /**
+     * Url that points to third party service where to Playlist was retrieved from
+     */
+    originalUrl?: string;
   }
 
   interface Playlist extends PlaylistInfo {

@@ -710,7 +710,7 @@ ___
 
 ▸ **setNowPlayingTracks**(`tracks`): `Promise`<`void`\>
 
-Set the user's Now Plyaing Queue track list;
+Set the user's Now Playing Queue track list;
 
 #### Parameters
 

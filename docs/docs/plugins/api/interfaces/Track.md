@@ -86,6 +86,14 @@ Name of track
 
 ___
 
+### originalUrl
+
+• `Optional` **originalUrl**: `string`
+
+Url that points to third party service where to track was retrieved from
+
+___
+
 ### pluginId
 
 • `Optional` **pluginId**: `string`
