@@ -284,7 +284,7 @@ ___
 
 ### onGetPlaylistTracks
 
-▸ **onGetPlaylistTracks**(`request`): `Promise`<[`PlaylistTracksResult`](PlaylistTracksResult.md)\>
+▸ `Optional` **onGetPlaylistTracks**(`request`): `Promise`<[`PlaylistTracksResult`](PlaylistTracksResult.md)\>
 
 Callback method that gets a playlist's tracks.  Used on `/plugins/:pluginId/playlists/:apiId`
 
@@ -302,7 +302,7 @@ ___
 
 ### onGetTopItems
 
-▸ **onGetTopItems**(): `Promise`<[`SearchAllResult`](SearchAllResult.md)\>
+▸ `Optional` **onGetTopItems**(): `Promise`<[`SearchAllResult`](SearchAllResult.md)\>
 
 Callback method to return items to display on Home page.
 

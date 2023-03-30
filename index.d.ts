@@ -148,7 +148,7 @@ declare global {
     /**
      * Callback method that gets a playlist's tracks.  Used on `/plugins/:pluginId/playlists/:apiId`
      */
-    onGetPlaylistTracks(
+    onGetPlaylistTracks?(
       request: PlaylistTrackRequest
     ): Promise<PlaylistTracksResult>;
     /**
@@ -170,7 +170,7 @@ declare global {
     /**
      * Callback method to return items to display on Home page.
      */
-    onGetTopItems(): Promise<SearchAllResult>;
+    onGetTopItems?(): Promise<SearchAllResult>;
     /**
      * Callback method that checks to see if url can be parsed by plugin
      * so that onLookupPlaylistUrl returns results
