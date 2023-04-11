@@ -209,6 +209,11 @@ declare global {
      * Callback method that receives parent.postMessage requests from UI frames.
      */
     onUiMessage?(message: any): void;
+    /**
+     * Callback method to lookup up track based on track information.
+     * It is used to convert tracks to use a different plugin.
+     */
+    onLookupTrack(request: LookupTrackRequest): Promise<Track>;
   }
 
   interface PluginInfo {
@@ -578,6 +583,11 @@ declare global {
   }
 
   type ParseUrlType = "playlist";
+
+  interface LookupTrackRequest {
+    trackName: string;
+    artistName?: string;
+  }
 }
 
 export {};

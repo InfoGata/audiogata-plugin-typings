@@ -387,6 +387,25 @@ Used on the `/playlists` page.
 
 ___
 
+### onLookupTrack
+
+▸ **onLookupTrack**(`request`): `Promise`<[`Track`](Track.md)\>
+
+Callback method to lookup up track based on track information.
+It is used to convert tracks to use a different plugin.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `request` | [`LookupTrackRequest`](LookupTrackRequest.md) |
+
+#### Returns
+
+`Promise`<[`Track`](Track.md)\>
+
+___
+
 ### onNowPlayingTracksAdded
 
 ▸ `Optional` **onNowPlayingTracksAdded**(`tracks`): `Promise`<`void`\>

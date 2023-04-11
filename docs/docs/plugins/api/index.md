@@ -22,6 +22,7 @@ custom_edit_url: null
 - [GetTrackRequest](interfaces/GetTrackRequest.md)
 - [GetTrackUrlRequest](interfaces/GetTrackUrlRequest.md)
 - [ImageInfo](interfaces/ImageInfo.md)
+- [LookupTrackRequest](interfaces/LookupTrackRequest.md)
 - [NotificationMessage](interfaces/NotificationMessage.md)
 - [PageInfo](interfaces/PageInfo.md)
 - [PlayTrackRequest](interfaces/PlayTrackRequest.md)
