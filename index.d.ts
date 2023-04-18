@@ -182,6 +182,10 @@ declare global {
      */
     onLookupPlaylistUrl?(url: string): Promise<Playlist>;
     /**
+     * Callback method that takes urls and returns tracks.
+     */
+    onLookupTrackUrls?(urls: string[]): Promise<Track[]>;
+    /**
      * Callback method to detect when new tracks got added to Now Playing queue
      * @param tracks Tracks that got added to queue
      */
@@ -582,7 +586,7 @@ declare global {
     value: string;
   }
 
-  type ParseUrlType = "playlist";
+  type ParseUrlType = "playlist" | "track";
 
   interface LookupTrackRequest {
     trackName: string;

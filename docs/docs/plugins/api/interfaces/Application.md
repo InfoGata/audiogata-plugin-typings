@@ -220,7 +220,7 @@ so that onLookupPlaylistUrl returns results
 | Name | Type |
 | :------ | :------ |
 | `url` | `string` |
-| `type` | ``"playlist"`` |
+| `type` | [`ParseUrlType`](../#parseurltype) |
 
 #### Returns
 
@@ -403,6 +403,24 @@ It is used to convert tracks to use a different plugin.
 #### Returns
 
 `Promise`<[`Track`](Track.md)\>
+
+___
+
+### onLookupTrackUrls
+
+▸ `Optional` **onLookupTrackUrls**(`urls`): `Promise`<[`Track`](Track.md)[]\>
+
+Callback method that takes urls and returns tracks.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `urls` | `string`[] |
+
+#### Returns
+
+`Promise`<[`Track`](Track.md)[]\>
 
 ___
 
