@@ -22,5 +22,8 @@
   },
   "directories": {
     "doc": "docs"
+  },
+  "engines": {
+    "node": ">=12"
   }
 }
