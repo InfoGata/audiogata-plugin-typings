@@ -282,6 +282,24 @@ Callback method that gets an artists's albums.  Used on `/plugins/:pluginId/arti
 
 ___
 
+### onGetLyrics
+
+▸ **onGetLyrics**(`request`): `Promise`<[`GetLyricsResponse`](GetLyricsResponse.md)\>
+
+Callback method to get lyrics based on a track's name and artist name
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `request` | [`GetLyricsRequest`](GetLyricsRequest.md) |
+
+#### Returns
+
+`Promise`<[`GetLyricsResponse`](GetLyricsResponse.md)\>
+
+___
+
 ### onGetPlaylistTracks
 
 ▸ `Optional` **onGetPlaylistTracks**(`request`): `Promise`<[`PlaylistTracksResult`](PlaylistTracksResult.md)\>

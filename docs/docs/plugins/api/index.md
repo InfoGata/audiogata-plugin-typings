@@ -19,6 +19,8 @@ custom_edit_url: null
 - [Filter](interfaces/Filter.md)
 - [FilterInfo](interfaces/FilterInfo.md)
 - [FilterOption](interfaces/FilterOption.md)
+- [GetLyricsRequest](interfaces/GetLyricsRequest.md)
+- [GetLyricsResponse](interfaces/GetLyricsResponse.md)
 - [GetTrackRequest](interfaces/GetTrackRequest.md)
 - [GetTrackUrlRequest](interfaces/GetTrackUrlRequest.md)
 - [ImageInfo](interfaces/ImageInfo.md)

@@ -218,6 +218,10 @@ declare global {
      * It is used to convert tracks to use a different plugin.
      */
     onLookupTrack(request: LookupTrackRequest): Promise<Track>;
+    /**
+     * Callback method to get lyrics based on a track's name and artist name
+     */
+    onGetLyrics(request: GetLyricsRequest): Promise<GetLyricsResponse>;
   }
 
   interface PluginInfo {
@@ -591,6 +595,15 @@ declare global {
   interface LookupTrackRequest {
     trackName: string;
     artistName?: string;
+  }
+
+  interface GetLyricsRequest {
+    trackName: string;
+    artistName?: string;
+  }
+
+  interface GetLyricsResponse {
+    lyrics: string;
   }
 }
 
