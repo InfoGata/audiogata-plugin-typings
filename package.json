@@ -8,7 +8,7 @@
   "bugs": {
     "url": "https://github.com/InfoGata/audiogata-plugin-typings/issues"
   },
-  "version": "1.10.0",
+  "version": "1.11.0",
   "description": "Typings for the AudioGata Plugin API",
   "main": "",
   "scripts": {
