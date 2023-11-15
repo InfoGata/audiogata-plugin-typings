@@ -260,6 +260,10 @@ declare global {
      * on options page.
      */
     optionsSameOrigin?: boolean;
+    /**
+     * Plugin's manifest
+     */
+    manifest?: Manifest;
   }
 
   interface Track {
@@ -604,6 +608,22 @@ declare global {
 
   interface GetLyricsResponse {
     lyrics: string;
+  }
+
+  interface Manifest {
+    name: string;
+    script: string;
+    id?: string;
+    version?: string;
+    description?: string;
+    options?: string | ManifestOptions;
+    player?: string;
+    updateUrl?: string;
+    homepage?: string;
+  }
+  interface ManifestOptions {
+    page: string;
+    sameOrigin?: boolean;
   }
 }
 

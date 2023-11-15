@@ -32,6 +32,14 @@ Unique Id of Plugin
 
 ___
 
+### manifest
+
+• `Optional` **manifest**: [`Manifest`](Manifest.md)
+
+Plugin's manifest
+
+___
+
 ### name
 
 • **name**: `string`
