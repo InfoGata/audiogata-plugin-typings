@@ -38,12 +38,6 @@ ___
 
 ___
 
-### player
-
-• `Optional` **player**: `string`
-
-___
-
 ### script
 
 • **script**: `string`

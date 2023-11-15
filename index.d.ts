@@ -617,10 +617,10 @@ declare global {
     version?: string;
     description?: string;
     options?: string | ManifestOptions;
-    player?: string;
-    updateUrl?: string;
     homepage?: string;
+    updateUrl?: string;
   }
+
   interface ManifestOptions {
     page: string;
     sameOrigin?: boolean;
