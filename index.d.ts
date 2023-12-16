@@ -21,7 +21,7 @@ declare global {
     /**
      * Make a networkRequest from parent AudioGata frame rather from plugin frame.
      */
-    networkRequest(input: RequestInfo, init?: RequestInit): Promise<Response>;
+    networkRequest: typeof fetch;
     /**
      * Used to determine whether requests from networkRequest are restricted by CORs.
      */

@@ -6,6 +6,29 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
+## Properties
+
+### networkRequest
+
+• **networkRequest**: (`input`: `RequestInfo` \| `URL`, `init?`: `RequestInit`) => `Promise`<`Response`\>
+
+#### Type declaration
+
+▸ (`input`, `init?`): `Promise`<`Response`\>
+
+Make a networkRequest from parent AudioGata frame rather from plugin frame.
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `input` | `RequestInfo` \| `URL` |
+| `init?` | `RequestInit` |
+
+##### Returns
+
+`Promise`<`Response`\>
+
 ## Methods
 
 ### addPlaylists
@@ -186,25 +209,6 @@ Used to determine whether requests from networkRequest are restricted by CORs.
 #### Returns
 
 `Promise`<`boolean`\>
-
-___
-
-### networkRequest
-
-▸ **networkRequest**(`input`, `init?`): `Promise`<`Response`\>
-
-Make a networkRequest from parent AudioGata frame rather from plugin frame.
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `input` | `RequestInfo` |
-| `init?` | `RequestInit` |
-
-#### Returns
-
-`Promise`<`Response`\>
 
 ___
 
