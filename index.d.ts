@@ -73,6 +73,10 @@ declare global {
      */
     addTracksToPlaylist(playlistId: string, tracks: Track[]): Promise<void>;
     /**
+     * Returns the user's current theme
+     */
+    getTheme(): Promise<Theme>;
+    /**
      * Callback method to play the track using an embedded player in the plugin.
      * @param track The Track to play
      */
@@ -222,6 +226,10 @@ declare global {
      * Callback method to get lyrics based on a track's name and artist name
      */
     onGetLyrics(request: GetLyricsRequest): Promise<GetLyricsResponse>;
+    /**
+     * Callback method that is called after a users changes theme
+     */
+    onChangeTheme(theme: Theme): Promise<void>;
   }
 
   interface PluginInfo {
@@ -625,6 +633,8 @@ declare global {
     page: string;
     sameOrigin?: boolean;
   }
+
+  type Theme = "dark" | "light" | "system";
 }
 
 export {};

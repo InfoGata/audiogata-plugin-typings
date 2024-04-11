@@ -57,6 +57,12 @@ ___
 
 Ƭ **ParseUrlType**: ``"playlist"`` \| ``"track"``
 
+___
+
+### Theme
+
+Ƭ **Theme**: ``"dark"`` \| ``"light"`` \| ``"system"``
+
 ## Variables
 
 ### application

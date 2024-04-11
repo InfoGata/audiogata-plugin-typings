@@ -182,6 +182,18 @@ Get user's currently installed plugins.
 
 ___
 
+### getTheme
+
+▸ **getTheme**(): `Promise`<[`Theme`](../#theme)\>
+
+Returns the user's current theme
+
+#### Returns
+
+`Promise`<[`Theme`](../#theme)\>
+
+___
+
 ### installPlugins
 
 ▸ **installPlugins**(`plugins`): `Promise`<`void`\>
@@ -229,6 +241,24 @@ so that onLookupPlaylistUrl returns results
 #### Returns
 
 `Promise`<`boolean`\>
+
+___
+
+### onChangeTheme
+
+▸ **onChangeTheme**(`theme`): `Promise`<`void`\>
+
+Callback method that is called after a users changes theme
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `theme` | [`Theme`](../#theme) |
+
+#### Returns
+
+`Promise`<`void`\>
 
 ___
 
