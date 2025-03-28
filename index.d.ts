@@ -227,6 +227,10 @@ declare global {
      */
     onGetLyrics(request: GetLyricsRequest): Promise<GetLyricsResponse>;
     /**
+     * Callback method that returns search suggestions when a query is typed in the search bar
+     */
+    onGetSearchSuggestions(request: GetSearchSuggestionsRequest): Promise<string[]>;
+    /**
      * Callback method that is called after a users changes theme
      */
     onChangeTheme(theme: Theme): Promise<void>;
@@ -616,6 +620,10 @@ declare global {
 
   interface GetLyricsResponse {
     lyrics: string;
+  }
+
+  interface GetSearchSuggestionsRequest {
+    query: string;
   }
 
   interface Manifest {

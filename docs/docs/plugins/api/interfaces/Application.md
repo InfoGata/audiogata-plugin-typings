@@ -352,6 +352,24 @@ Callback method that gets a playlist's tracks.  Used on `/plugins/:pluginId/play
 
 ___
 
+### onGetSearchSuggestions
+
+▸ **onGetSearchSuggestions**(`request`): `Promise`<`string`[]\>
+
+Callback method that returns search suggestions when a query is typed in the search bar
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `request` | [`GetSearchSuggestionsRequest`](GetSearchSuggestionsRequest.md) |
+
+#### Returns
+
+`Promise`<`string`[]\>
+
+___
+
 ### onGetTopItems
 
 ▸ `Optional` **onGetTopItems**(): `Promise`<[`SearchAllResult`](SearchAllResult.md)\>
