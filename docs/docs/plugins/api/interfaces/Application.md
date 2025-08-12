@@ -10,11 +10,11 @@ custom_edit_url: null
 
 ### networkRequest
 
-• **networkRequest**: (`input`: `RequestInfo` \| `URL`, `init?`: `RequestInit`) => `Promise`<`Response`\>
+• **networkRequest**: (`input`: `RequestInfo` \| `URL`, `init?`: `RequestInit`) => `Promise`\<`Response`\>
 
 #### Type declaration
 
-▸ (`input`, `init?`): `Promise`<`Response`\>
+▸ (`input`, `init?`): `Promise`\<`Response`\>
 
 Make a networkRequest from parent AudioGata frame rather from plugin frame.
 
@@ -27,13 +27,13 @@ Make a networkRequest from parent AudioGata frame rather from plugin frame.
 
 ##### Returns
 
-`Promise`<`Response`\>
+`Promise`\<`Response`\>
 
 ## Methods
 
 ### addPlaylists
 
-▸ **addPlaylists**(`playlists`): `Promise`<`void`\>
+▸ **addPlaylists**(`playlists`): `Promise`\<`void`\>
 
 Adds or updates playlists. Playlists with the same id are updated.
 
@@ -45,13 +45,13 @@ Adds or updates playlists. Playlists with the same id are updated.
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`\<`void`\>
 
 ___
 
 ### addTracksToPlaylist
 
-▸ **addTracksToPlaylist**(`playlistId`, `tracks`): `Promise`<`void`\>
+▸ **addTracksToPlaylist**(`playlistId`, `tracks`): `Promise`\<`void`\>
 
 Adds tracks to a playlist
 
@@ -64,13 +64,13 @@ Adds tracks to a playlist
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`\<`void`\>
 
 ___
 
 ### createNotification
 
-▸ **createNotification**(`notification`): `Promise`<`void`\>
+▸ **createNotification**(`notification`): `Promise`\<`void`\>
 
 Show user a notification on the bottom left of the screen
 
@@ -82,121 +82,121 @@ Show user a notification on the bottom left of the screen
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`\<`void`\>
 
 ___
 
 ### endTrack
 
-▸ **endTrack**(): `Promise`<`void`\>
+▸ **endTrack**(): `Promise`\<`void`\>
 
 When plugin is acting as an embedded player, used to signal that the track has end.
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`\<`void`\>
 
 ___
 
 ### getCorsProxy
 
-▸ **getCorsProxy**(): `Promise`<`undefined` \| `string`\>
+▸ **getCorsProxy**(): `Promise`\<`undefined` \| `string`\>
 
 Get cors proxy configured in settings.
 
 #### Returns
 
-`Promise`<`undefined` \| `string`\>
+`Promise`\<`undefined` \| `string`\>
 
 ___
 
 ### getLocale
 
-▸ **getLocale**(): `Promise`<`string`\>
+▸ **getLocale**(): `Promise`\<`string`\>
 
 Get locale configured in settings.
 
 #### Returns
 
-`Promise`<`string`\>
+`Promise`\<`string`\>
 
 ___
 
 ### getNowPlayingTracks
 
-▸ **getNowPlayingTracks**(): `Promise`<[`Track`](Track.md)[]\>
+▸ **getNowPlayingTracks**(): `Promise`\<[`Track`](Track.md)[]\>
 
 Get the user's Now Plyaing Queue track list;
 
 #### Returns
 
-`Promise`<[`Track`](Track.md)[]\>
+`Promise`\<[`Track`](Track.md)[]\>
 
 ___
 
 ### getPlaylists
 
-▸ **getPlaylists**(): `Promise`<[`Playlist`](Playlist.md)[]\>
+▸ **getPlaylists**(): `Promise`\<[`Playlist`](Playlist.md)[]\>
 
 Get the user's current playlists including tracks.
 
 #### Returns
 
-`Promise`<[`Playlist`](Playlist.md)[]\>
+`Promise`\<[`Playlist`](Playlist.md)[]\>
 
 ___
 
 ### getPlaylistsInfo
 
-▸ **getPlaylistsInfo**(): `Promise`<[`PlaylistInfo`](PlaylistInfo.md)[]\>
+▸ **getPlaylistsInfo**(): `Promise`\<[`PlaylistInfo`](PlaylistInfo.md)[]\>
 
 Get the users's current playlists metadata without tracks.
 
 #### Returns
 
-`Promise`<[`PlaylistInfo`](PlaylistInfo.md)[]\>
+`Promise`\<[`PlaylistInfo`](PlaylistInfo.md)[]\>
 
 ___
 
 ### getPluginId
 
-▸ **getPluginId**(): `Promise`<`string`\>
+▸ **getPluginId**(): `Promise`\<`string`\>
 
 Get the current plugin's id.
 
 #### Returns
 
-`Promise`<`string`\>
+`Promise`\<`string`\>
 
 ___
 
 ### getPlugins
 
-▸ **getPlugins**(): `Promise`<[`PluginInfo`](PluginInfo.md)[]\>
+▸ **getPlugins**(): `Promise`\<[`PluginInfo`](PluginInfo.md)[]\>
 
 Get user's currently installed plugins.
 
 #### Returns
 
-`Promise`<[`PluginInfo`](PluginInfo.md)[]\>
+`Promise`\<[`PluginInfo`](PluginInfo.md)[]\>
 
 ___
 
 ### getTheme
 
-▸ **getTheme**(): `Promise`<[`Theme`](../#theme)\>
+▸ **getTheme**(): `Promise`\<[`Theme`](../#theme)\>
 
 Returns the user's current theme
 
 #### Returns
 
-`Promise`<[`Theme`](../#theme)\>
+`Promise`\<[`Theme`](../#theme)\>
 
 ___
 
 ### installPlugins
 
-▸ **installPlugins**(`plugins`): `Promise`<`void`\>
+▸ **installPlugins**(`plugins`): `Promise`\<`void`\>
 
 Open user dialog for user to optionally install plugins
 
@@ -208,25 +208,25 @@ Open user dialog for user to optionally install plugins
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`\<`void`\>
 
 ___
 
 ### isNetworkRequestCorsDisabled
 
-▸ **isNetworkRequestCorsDisabled**(): `Promise`<`boolean`\>
+▸ **isNetworkRequestCorsDisabled**(): `Promise`\<`boolean`\>
 
 Used to determine whether requests from networkRequest are restricted by CORs.
 
 #### Returns
 
-`Promise`<`boolean`\>
+`Promise`\<`boolean`\>
 
 ___
 
 ### onCanParseUrl
 
-▸ `Optional` **onCanParseUrl**(`url`, `type`): `Promise`<`boolean`\>
+▸ `Optional` **onCanParseUrl**(`url`, `type`): `Promise`\<`boolean`\>
 
 Callback method that checks to see if url can be parsed by plugin
 so that onLookupPlaylistUrl returns results
@@ -240,13 +240,13 @@ so that onLookupPlaylistUrl returns results
 
 #### Returns
 
-`Promise`<`boolean`\>
+`Promise`\<`boolean`\>
 
 ___
 
 ### onChangeTheme
 
-▸ **onChangeTheme**(`theme`): `Promise`<`void`\>
+▸ **onChangeTheme**(`theme`): `Promise`\<`void`\>
 
 Callback method that is called after a users changes theme
 
@@ -258,13 +258,13 @@ Callback method that is called after a users changes theme
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`\<`void`\>
 
 ___
 
 ### onDeepLinkMessage
 
-▸ `Optional` **onDeepLinkMessage**(`message`): `Promise`<`void`\>
+▸ `Optional` **onDeepLinkMessage**(`message`): `Promise`\<`void`\>
 
 Callback method to return deep link messages in mobile
 
@@ -276,13 +276,13 @@ Callback method to return deep link messages in mobile
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`\<`void`\>
 
 ___
 
 ### onGetAlbumTracks
 
-▸ `Optional` **onGetAlbumTracks**(`request`): `Promise`<[`AlbumTracksResult`](AlbumTracksResult.md)\>
+▸ `Optional` **onGetAlbumTracks**(`request`): `Promise`\<[`AlbumTracksResult`](AlbumTracksResult.md)\>
 
 Callback method that gets an albums's tracks.  Used on `/plugins/:pluginId/albums/:apiId`
 
@@ -294,13 +294,13 @@ Callback method that gets an albums's tracks.  Used on `/plugins/:pluginId/album
 
 #### Returns
 
-`Promise`<[`AlbumTracksResult`](AlbumTracksResult.md)\>
+`Promise`\<[`AlbumTracksResult`](AlbumTracksResult.md)\>
 
 ___
 
 ### onGetArtistAlbums
 
-▸ `Optional` **onGetArtistAlbums**(`request`): `Promise`<[`ArtistAlbumsResult`](ArtistAlbumsResult.md)\>
+▸ `Optional` **onGetArtistAlbums**(`request`): `Promise`\<[`ArtistAlbumsResult`](ArtistAlbumsResult.md)\>
 
 Callback method that gets an artists's albums.  Used on `/plugins/:pluginId/artists/:apiId`
 
@@ -312,13 +312,13 @@ Callback method that gets an artists's albums.  Used on `/plugins/:pluginId/arti
 
 #### Returns
 
-`Promise`<[`ArtistAlbumsResult`](ArtistAlbumsResult.md)\>
+`Promise`\<[`ArtistAlbumsResult`](ArtistAlbumsResult.md)\>
 
 ___
 
 ### onGetLyrics
 
-▸ **onGetLyrics**(`request`): `Promise`<[`GetLyricsResponse`](GetLyricsResponse.md)\>
+▸ **onGetLyrics**(`request`): `Promise`\<[`GetLyricsResponse`](GetLyricsResponse.md)\>
 
 Callback method to get lyrics based on a track's name and artist name
 
@@ -330,13 +330,13 @@ Callback method to get lyrics based on a track's name and artist name
 
 #### Returns
 
-`Promise`<[`GetLyricsResponse`](GetLyricsResponse.md)\>
+`Promise`\<[`GetLyricsResponse`](GetLyricsResponse.md)\>
 
 ___
 
 ### onGetPlaylistTracks
 
-▸ `Optional` **onGetPlaylistTracks**(`request`): `Promise`<[`PlaylistTracksResult`](PlaylistTracksResult.md)\>
+▸ `Optional` **onGetPlaylistTracks**(`request`): `Promise`\<[`PlaylistTracksResult`](PlaylistTracksResult.md)\>
 
 Callback method that gets a playlist's tracks.  Used on `/plugins/:pluginId/playlists/:apiId`
 
@@ -348,13 +348,13 @@ Callback method that gets a playlist's tracks.  Used on `/plugins/:pluginId/play
 
 #### Returns
 
-`Promise`<[`PlaylistTracksResult`](PlaylistTracksResult.md)\>
+`Promise`\<[`PlaylistTracksResult`](PlaylistTracksResult.md)\>
 
 ___
 
 ### onGetSearchSuggestions
 
-▸ **onGetSearchSuggestions**(`request`): `Promise`<`string`[]\>
+▸ **onGetSearchSuggestions**(`request`): `Promise`\<`string`[]\>
 
 Callback method that returns search suggestions when a query is typed in the search bar
 
@@ -366,25 +366,25 @@ Callback method that returns search suggestions when a query is typed in the sea
 
 #### Returns
 
-`Promise`<`string`[]\>
+`Promise`\<`string`[]\>
 
 ___
 
 ### onGetTopItems
 
-▸ `Optional` **onGetTopItems**(): `Promise`<[`SearchAllResult`](SearchAllResult.md)\>
+▸ `Optional` **onGetTopItems**(): `Promise`\<[`SearchAllResult`](SearchAllResult.md)\>
 
 Callback method to return items to display on Home page.
 
 #### Returns
 
-`Promise`<[`SearchAllResult`](SearchAllResult.md)\>
+`Promise`\<[`SearchAllResult`](SearchAllResult.md)\>
 
 ___
 
 ### onGetTrack
 
-▸ `Optional` **onGetTrack**(`request`): `Promise`<[`Track`](Track.md)\>
+▸ `Optional` **onGetTrack**(`request`): `Promise`\<[`Track`](Track.md)\>
 
 Callback method to get track information. Used on `/track/:id`
 
@@ -396,13 +396,13 @@ Callback method to get track information. Used on `/track/:id`
 
 #### Returns
 
-`Promise`<[`Track`](Track.md)\>
+`Promise`\<[`Track`](Track.md)\>
 
 ___
 
 ### onGetTrackUrl
 
-▸ `Optional` **onGetTrackUrl**(`request`): `Promise`<`string`\>
+▸ `Optional` **onGetTrackUrl**(`request`): `Promise`\<`string`\>
 
 Callback method to get track url. Must be set to play track if onPlay is not set.
 
@@ -414,7 +414,7 @@ Callback method to get track url. Must be set to play track if onPlay is not set
 
 #### Returns
 
-`Promise`<`string`\>
+`Promise`\<`string`\>
 
 Url to play
 
@@ -422,7 +422,7 @@ ___
 
 ### onGetUserPlaylists
 
-▸ `Optional` **onGetUserPlaylists**(`request`): `Promise`<[`SearchPlaylistResult`](SearchPlaylistResult.md)\>
+▸ `Optional` **onGetUserPlaylists**(`request`): `Promise`\<[`SearchPlaylistResult`](SearchPlaylistResult.md)\>
 
 Callback method that gets user playlists.  Used on `/plugins/:pluginId/playlists`
 
@@ -434,13 +434,13 @@ Callback method that gets user playlists.  Used on `/plugins/:pluginId/playlists
 
 #### Returns
 
-`Promise`<[`SearchPlaylistResult`](SearchPlaylistResult.md)\>
+`Promise`\<[`SearchPlaylistResult`](SearchPlaylistResult.md)\>
 
 ___
 
 ### onLookupPlaylistUrl
 
-▸ `Optional` **onLookupPlaylistUrl**(`url`): `Promise`<[`Playlist`](Playlist.md)\>
+▸ `Optional` **onLookupPlaylistUrl**(`url`): `Promise`\<[`Playlist`](Playlist.md)\>
 
 Callback method that takes a url and returns a playlist.
 Used on the `/playlists` page.
@@ -453,13 +453,13 @@ Used on the `/playlists` page.
 
 #### Returns
 
-`Promise`<[`Playlist`](Playlist.md)\>
+`Promise`\<[`Playlist`](Playlist.md)\>
 
 ___
 
 ### onLookupTrack
 
-▸ **onLookupTrack**(`request`): `Promise`<[`Track`](Track.md)\>
+▸ **onLookupTrack**(`request`): `Promise`\<[`Track`](Track.md)\>
 
 Callback method to lookup up track based on track information.
 It is used to convert tracks to use a different plugin.
@@ -472,13 +472,13 @@ It is used to convert tracks to use a different plugin.
 
 #### Returns
 
-`Promise`<[`Track`](Track.md)\>
+`Promise`\<[`Track`](Track.md)\>
 
 ___
 
 ### onLookupTrackUrls
 
-▸ `Optional` **onLookupTrackUrls**(`urls`): `Promise`<[`Track`](Track.md)[]\>
+▸ `Optional` **onLookupTrackUrls**(`urls`): `Promise`\<[`Track`](Track.md)[]\>
 
 Callback method that takes urls and returns tracks.
 
@@ -490,13 +490,13 @@ Callback method that takes urls and returns tracks.
 
 #### Returns
 
-`Promise`<[`Track`](Track.md)[]\>
+`Promise`\<[`Track`](Track.md)[]\>
 
 ___
 
 ### onNowPlayingTracksAdded
 
-▸ `Optional` **onNowPlayingTracksAdded**(`tracks`): `Promise`<`void`\>
+▸ `Optional` **onNowPlayingTracksAdded**(`tracks`): `Promise`\<`void`\>
 
 Callback method to detect when new tracks got added to Now Playing queue
 
@@ -508,13 +508,13 @@ Callback method to detect when new tracks got added to Now Playing queue
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`\<`void`\>
 
 ___
 
 ### onNowPlayingTracksChanged
 
-▸ `Optional` **onNowPlayingTracksChanged**(`tracks`): `Promise`<`void`\>
+▸ `Optional` **onNowPlayingTracksChanged**(`tracks`): `Promise`\<`void`\>
 
 Callback method to detect when tracks got changed in the Now Playing queue
 
@@ -526,13 +526,13 @@ Callback method to detect when tracks got changed in the Now Playing queue
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`\<`void`\>
 
 ___
 
 ### onNowPlayingTracksRemoved
 
-▸ `Optional` **onNowPlayingTracksRemoved**(`tracks`): `Promise`<`void`\>
+▸ `Optional` **onNowPlayingTracksRemoved**(`tracks`): `Promise`\<`void`\>
 
 Callback method to detect when tracks got removed from Now Playing queue
 
@@ -544,13 +544,13 @@ Callback method to detect when tracks got removed from Now Playing queue
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`\<`void`\>
 
 ___
 
 ### onNowPlayingTracksSet
 
-▸ `Optional` **onNowPlayingTracksSet**(`tracks`): `Promise`<`void`\>
+▸ `Optional` **onNowPlayingTracksSet**(`tracks`): `Promise`\<`void`\>
 
 Callback method to detect when there is a new tracklist in the Now Playing queue
 
@@ -562,25 +562,25 @@ Callback method to detect when there is a new tracklist in the Now Playing queue
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`\<`void`\>
 
 ___
 
 ### onPause
 
-▸ `Optional` **onPause**(): `Promise`<`void`\>
+▸ `Optional` **onPause**(): `Promise`\<`void`\>
 
 Callback method to pause embedded player
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`\<`void`\>
 
 ___
 
 ### onPlay
 
-▸ `Optional` **onPlay**(`track`): `Promise`<`void`\>
+▸ `Optional` **onPlay**(`track`): `Promise`\<`void`\>
 
 Callback method to play the track using an embedded player in the plugin.
 
@@ -592,25 +592,25 @@ Callback method to play the track using an embedded player in the plugin.
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`\<`void`\>
 
 ___
 
 ### onResume
 
-▸ `Optional` **onResume**(): `Promise`<`void`\>
+▸ `Optional` **onResume**(): `Promise`\<`void`\>
 
 Callback method to resume embedded player
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`\<`void`\>
 
 ___
 
 ### onSearchAlbums
 
-▸ `Optional` **onSearchAlbums**(`request`): `Promise`<[`SearchAlbumResult`](SearchAlbumResult.md)\>
+▸ `Optional` **onSearchAlbums**(`request`): `Promise`\<[`SearchAlbumResult`](SearchAlbumResult.md)\>
 
 Callback method to return album search results on `/search`
 
@@ -627,13 +627,13 @@ This method must be set for album pagination to work on the
 
 #### Returns
 
-`Promise`<[`SearchAlbumResult`](SearchAlbumResult.md)\>
+`Promise`\<[`SearchAlbumResult`](SearchAlbumResult.md)\>
 
 ___
 
 ### onSearchAll
 
-▸ `Optional` **onSearchAll**(`request`): `Promise`<[`SearchAllResult`](SearchAllResult.md)\>
+▸ `Optional` **onSearchAll**(`request`): `Promise`\<[`SearchAllResult`](SearchAllResult.md)\>
 
 Callback method to return search results on `/search`
 
@@ -650,13 +650,13 @@ This method must be set for the plugin to show on the
 
 #### Returns
 
-`Promise`<[`SearchAllResult`](SearchAllResult.md)\>
+`Promise`\<[`SearchAllResult`](SearchAllResult.md)\>
 
 ___
 
 ### onSearchArtists
 
-▸ `Optional` **onSearchArtists**(`request`): `Promise`<[`SearchArtistResult`](SearchArtistResult.md)\>
+▸ `Optional` **onSearchArtists**(`request`): `Promise`\<[`SearchArtistResult`](SearchArtistResult.md)\>
 
 Callback method to return artist search results on `/search`
 
@@ -673,13 +673,13 @@ This method must be set for artist pagination to work on the
 
 #### Returns
 
-`Promise`<[`SearchArtistResult`](SearchArtistResult.md)\>
+`Promise`\<[`SearchArtistResult`](SearchArtistResult.md)\>
 
 ___
 
 ### onSearchPlaylists
 
-▸ `Optional` **onSearchPlaylists**(`request`): `Promise`<[`SearchPlaylistResult`](SearchPlaylistResult.md)\>
+▸ `Optional` **onSearchPlaylists**(`request`): `Promise`\<[`SearchPlaylistResult`](SearchPlaylistResult.md)\>
 
 Callback method to return playlist search results on `/search`
 
@@ -696,13 +696,13 @@ This method must be set for playlist pagination to work on the
 
 #### Returns
 
-`Promise`<[`SearchPlaylistResult`](SearchPlaylistResult.md)\>
+`Promise`\<[`SearchPlaylistResult`](SearchPlaylistResult.md)\>
 
 ___
 
 ### onSearchTracks
 
-▸ `Optional` **onSearchTracks**(`request`): `Promise`<[`SearchTrackResult`](SearchTrackResult.md)\>
+▸ `Optional` **onSearchTracks**(`request`): `Promise`\<[`SearchTrackResult`](SearchTrackResult.md)\>
 
 Callback method to return track search results on `/search`
 
@@ -719,13 +719,13 @@ This method must be set for track pagination to work on the
 
 #### Returns
 
-`Promise`<[`SearchTrackResult`](SearchTrackResult.md)\>
+`Promise`\<[`SearchTrackResult`](SearchTrackResult.md)\>
 
 ___
 
 ### onSeek
 
-▸ `Optional` **onSeek**(`time`): `Promise`<`void`\>
+▸ `Optional` **onSeek**(`time`): `Promise`\<`void`\>
 
 Callback method to seek time in the embedded player
 
@@ -737,13 +737,13 @@ Callback method to seek time in the embedded player
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`\<`void`\>
 
 ___
 
 ### onSetPlaybackRate
 
-▸ `Optional` **onSetPlaybackRate**(`rate`): `Promise`<`void`\>
+▸ `Optional` **onSetPlaybackRate**(`rate`): `Promise`\<`void`\>
 
 Callback method to set the playback rate of the embedded player
 
@@ -755,13 +755,13 @@ Callback method to set the playback rate of the embedded player
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`\<`void`\>
 
 ___
 
 ### onSetVolume
 
-▸ `Optional` **onSetVolume**(`volume`): `Promise`<`void`\>
+▸ `Optional` **onSetVolume**(`volume`): `Promise`\<`void`\>
 
 Callback method to set volume of embedded player
 
@@ -773,7 +773,7 @@ Callback method to set volume of embedded player
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`\<`void`\>
 
 ___
 
@@ -797,7 +797,7 @@ ___
 
 ### postUiMessage
 
-▸ **postUiMessage**(`msg`): `Promise`<`void`\>
+▸ **postUiMessage**(`msg`): `Promise`\<`void`\>
 
 Sends a message to ui frames like `options`  set in `manifest.json`.
 
@@ -809,13 +809,13 @@ Sends a message to ui frames like `options`  set in `manifest.json`.
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`\<`void`\>
 
 ___
 
 ### setNowPlayingTracks
 
-▸ **setNowPlayingTracks**(`tracks`): `Promise`<`void`\>
+▸ **setNowPlayingTracks**(`tracks`): `Promise`\<`void`\>
 
 Set the user's Now Playing Queue track list;
 
@@ -827,13 +827,13 @@ Set the user's Now Playing Queue track list;
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`\<`void`\>
 
 ___
 
 ### setTrackTime
 
-▸ **setTrackTime**(`currentTime`): `Promise`<`void`\>
+▸ **setTrackTime**(`currentTime`): `Promise`\<`void`\>
 
 When plugin is acting as an embedded player, used to show user current track time.
 
@@ -845,4 +845,4 @@ When plugin is acting as an embedded player, used to show user current track tim
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`\<`void`\>

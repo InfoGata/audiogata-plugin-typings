@@ -16,4 +16,4 @@ In https://www.audiogata.com/plugins click the button `LOAD PLUGIN FROM URL` and
 
 It is possible to link directly to a plugin from audiogata:
 
-https&#65279;://www&#46;audiogata&#46;com/plugininstall?manifestUrl={url}
+https&#65279;://www&#46;audiogata&#46;com/plugininstall?manifestUrl=\{url\}
