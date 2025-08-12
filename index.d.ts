@@ -166,6 +166,12 @@ declare global {
       request: ArtistAlbumRequest
     ): Promise<ArtistAlbumsResult>;
     /**
+     * Callback method that gets an artist's top tracks.  Used on `/plugins/:pluginId/artists/:apiId`
+     */
+    onGetArtistTopTracks?(
+      request: ArtistTopTracksRequest
+    ): Promise<ArtistTopTracksResult>;
+    /**
      * Callback method that gets user playlists.  Used on `/plugins/:pluginId/playlists`
      */
     onGetUserPlaylists?(
@@ -517,7 +523,16 @@ declare global {
     pageInfo?: PageInfo;
   }
 
+  interface ArtistTopTracksRequest {
+    apiId?: string;
+    pageInfo?: PageInfo;
+  }
+
   interface ArtistAlbumsResult extends SearchAlbumResult {
+    artist?: Artist;
+  }
+
+  interface ArtistTopTracksResult extends SearchTrackResult {
     artist?: Artist;
   }
 
