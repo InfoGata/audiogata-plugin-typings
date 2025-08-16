@@ -39,6 +39,7 @@
 - [SearchRequest](interfaces/SearchRequest.md)
 - [SearchResult](interfaces/SearchResult.md)
 - [SearchTrackResult](interfaces/SearchTrackResult.md)
+- [SortOption](interfaces/SortOption.md)
 - [Track](interfaces/Track.md)
 - [UserPlaylistRequest](interfaces/UserPlaylistRequest.md)
 

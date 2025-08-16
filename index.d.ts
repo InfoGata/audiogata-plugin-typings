@@ -521,6 +521,7 @@ declare global {
   interface ArtistAlbumRequest {
     apiId?: string;
     pageInfo?: PageInfo;
+    sortBy?: string;
   }
 
   interface ArtistTopTracksRequest {
@@ -530,6 +531,8 @@ declare global {
 
   interface ArtistAlbumsResult extends SearchAlbumResult {
     artist?: Artist;
+    sortOptions?: SortOption[];
+    sortBy?: string;
   }
 
   interface ArtistTopTracksResult extends SearchTrackResult {
@@ -617,6 +620,11 @@ declare global {
   }
 
   interface FilterOption {
+    displayName: string;
+    value: string;
+  }
+
+  interface SortOption {
     displayName: string;
     value: string;
   }

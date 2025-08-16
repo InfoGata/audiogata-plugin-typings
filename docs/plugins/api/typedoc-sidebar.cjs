@@ -193,6 +193,11 @@ const typedocSidebar = {
         },
         {
           type: "doc",
+          id: "../plugins/api/interfaces/SortOption",
+          label: "SortOption"
+        },
+        {
+          type: "doc",
           id: "../plugins/api/interfaces/Track",
           label: "Track"
         },

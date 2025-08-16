@@ -39,3 +39,15 @@
 #### Inherited from
 
 [`SearchAlbumResult`](SearchAlbumResult.md).[`pageInfo`](SearchAlbumResult.md#pageinfo)
+
+***
+
+### sortBy?
+
+> `optional` **sortBy**: `string`
+
+***
+
+### sortOptions?
+
+> `optional` **sortOptions**: [`SortOption`](SortOption.md)[]
