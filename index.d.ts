@@ -178,6 +178,12 @@ declare global {
       request: UserPlaylistRequest
     ): Promise<SearchPlaylistResult>;
     /**
+     * Callback method that gets user library tracks.  Used on `/plugins/:pluginId/library`
+     */
+    onGetLibraryTracks?(
+      request: LibraryTracksRequest
+    ): Promise<SearchTrackResult>;
+    /**
      * Callback method to return items to display on Home page.
      */
     onGetTopItems?(): Promise<SearchAllResult>;
@@ -544,6 +550,10 @@ declare global {
   }
 
   interface UserPlaylistRequest {
+    pageInfo?: PageInfo;
+  }
+
+  interface LibraryTracksRequest {
     pageInfo?: PageInfo;
   }
 

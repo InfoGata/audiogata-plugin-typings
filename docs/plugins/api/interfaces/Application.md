@@ -339,6 +339,24 @@ Callback method that gets an artist's top tracks.  Used on `/plugins/:pluginId/a
 
 ***
 
+### onGetLibraryTracks()?
+
+> `optional` **onGetLibraryTracks**(`request`): `Promise`\<[`SearchTrackResult`](SearchTrackResult.md)\>
+
+Callback method that gets user library tracks.  Used on `/plugins/:pluginId/library`
+
+#### Parameters
+
+##### request
+
+[`LibraryTracksRequest`](LibraryTracksRequest.md)
+
+#### Returns
+
+`Promise`\<[`SearchTrackResult`](SearchTrackResult.md)\>
+
+***
+
 ### onGetLyrics()
 
 > **onGetLyrics**(`request`): `Promise`\<[`GetLyricsResponse`](GetLyricsResponse.md)\>

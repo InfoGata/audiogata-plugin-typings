@@ -21,6 +21,7 @@
 - [GetTrackRequest](interfaces/GetTrackRequest.md)
 - [GetTrackUrlRequest](interfaces/GetTrackUrlRequest.md)
 - [ImageInfo](interfaces/ImageInfo.md)
+- [LibraryTracksRequest](interfaces/LibraryTracksRequest.md)
 - [LookupTrackRequest](interfaces/LookupTrackRequest.md)
 - [Manifest](interfaces/Manifest.md)
 - [ManifestOptions](interfaces/ManifestOptions.md)

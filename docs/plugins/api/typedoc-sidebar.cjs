@@ -103,6 +103,11 @@ const typedocSidebar = {
         },
         {
           type: "doc",
+          id: "../plugins/api/interfaces/LibraryTracksRequest",
+          label: "LibraryTracksRequest"
+        },
+        {
+          type: "doc",
           id: "../plugins/api/interfaces/LookupTrackRequest",
           label: "LookupTrackRequest"
         },
