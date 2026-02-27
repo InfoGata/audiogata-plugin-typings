@@ -14,13 +14,10 @@ npm i --save-dev @infogata/audiogata-plugin-typings
 
 Configure _tsconfig.json_
 
-```js
+```json
 {
   "compilerOptions": {
-    "typeRoots": [
-      "./node_modules/@types",
-      "./node_modules/@infogata"
-    ]
+    "types": ["@infogata/audiogata-plugin-typings"]
   }
 }
 ```
