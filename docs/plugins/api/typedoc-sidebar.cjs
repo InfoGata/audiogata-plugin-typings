@@ -108,6 +108,21 @@ const typedocSidebar = {
         },
         {
           type: "doc",
+          id: "../plugins/api/interfaces/LoginCallbackRequest",
+          label: "LoginCallbackRequest"
+        },
+        {
+          type: "doc",
+          id: "../plugins/api/interfaces/LoginRequest",
+          label: "LoginRequest"
+        },
+        {
+          type: "doc",
+          id: "../plugins/api/interfaces/LoginResponse",
+          label: "LoginResponse"
+        },
+        {
+          type: "doc",
           id: "../plugins/api/interfaces/LookupTrackRequest",
           label: "LookupTrackRequest"
         },
@@ -200,6 +215,26 @@ const typedocSidebar = {
           type: "doc",
           id: "../plugins/api/interfaces/SortOption",
           label: "SortOption"
+        },
+        {
+          type: "doc",
+          id: "../plugins/api/interfaces/SyncDownloadRequest",
+          label: "SyncDownloadRequest"
+        },
+        {
+          type: "doc",
+          id: "../plugins/api/interfaces/SyncDownloadResponse",
+          label: "SyncDownloadResponse"
+        },
+        {
+          type: "doc",
+          id: "../plugins/api/interfaces/SyncUploadRequest",
+          label: "SyncUploadRequest"
+        },
+        {
+          type: "doc",
+          id: "../plugins/api/interfaces/SyncUploadResponse",
+          label: "SyncUploadResponse"
         },
         {
           type: "doc",

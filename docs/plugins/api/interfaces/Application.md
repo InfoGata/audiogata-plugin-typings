@@ -479,6 +479,71 @@ Callback method that gets user playlists.  Used on `/plugins/:pluginId/playlists
 
 ***
 
+### onIsLoggedIn()
+
+> **onIsLoggedIn**(): `Promise`\<`boolean`\>
+
+Callback method to check if currently logged in
+
+#### Returns
+
+`Promise`\<`boolean`\>
+
+***
+
+### onLogin()
+
+> **onLogin**(`request`): `Promise`\<`void` \| [`LoginResponse`](LoginResponse.md)\>
+
+Callback method to handle login from the host.
+When popupName is provided, the host has opened a blank popup with that
+name. Return { url } to have the host navigate the popup.
+Put `state={"pluginId": <id>}` in the OAuth url so the mobile app can
+route the callback back to the right plugin.
+
+#### Parameters
+
+##### request
+
+[`LoginRequest`](LoginRequest.md)
+
+#### Returns
+
+`Promise`\<`void` \| [`LoginResponse`](LoginResponse.md)\>
+
+***
+
+### onLoginCallback()
+
+> **onLoginCallback**(`request`): `Promise`\<`void`\>
+
+Callback method to handle the OAuth callback URL relayed by the host.
+Called after the popup redirects back with the full callback URL.
+
+#### Parameters
+
+##### request
+
+[`LoginCallbackRequest`](LoginCallbackRequest.md)
+
+#### Returns
+
+`Promise`\<`void`\>
+
+***
+
+### onLogout()
+
+> **onLogout**(): `Promise`\<`void`\>
+
+Callback method to handle logout from the host
+
+#### Returns
+
+`Promise`\<`void`\>
+
+***
+
 ### onLookupPlaylistUrl()?
 
 > `optional` **onLookupPlaylistUrl**(`url`): `Promise`\<[`Playlist`](Playlist.md)\>
@@ -831,6 +896,44 @@ Volume of player. 1 is 100% volume.  0.5 is 50%.  min 0, max 1
 #### Returns
 
 `Promise`\<`void`\>
+
+***
+
+### onSyncDownload()
+
+> **onSyncDownload**(`request`): `Promise`\<[`SyncDownloadResponse`](SyncDownloadResponse.md)\>
+
+Callback method to download sync data from cloud storage
+
+#### Parameters
+
+##### request
+
+[`SyncDownloadRequest`](SyncDownloadRequest.md)
+
+#### Returns
+
+`Promise`\<[`SyncDownloadResponse`](SyncDownloadResponse.md)\>
+
+***
+
+### onSyncUpload()
+
+> **onSyncUpload**(`request`): `Promise`\<[`SyncUploadResponse`](SyncUploadResponse.md)\>
+
+Callback method to upload sync data to cloud storage.
+Plugins that define both onSyncUpload and onSyncDownload can be chosen
+as the cloud sync provider in Settings.
+
+#### Parameters
+
+##### request
+
+[`SyncUploadRequest`](SyncUploadRequest.md)
+
+#### Returns
+
+`Promise`\<[`SyncUploadResponse`](SyncUploadResponse.md)\>
 
 ***
 

@@ -246,6 +246,37 @@ declare global {
      * Callback method that is called after a users changes theme
      */
     onChangeTheme(theme: Theme): Promise<void>;
+    /**
+     * Callback method to handle login from the host.
+     * When popupName is provided, the host has opened a blank popup with that
+     * name. Return { url } to have the host navigate the popup.
+     * Put `state={"pluginId": <id>}` in the OAuth url so the mobile app can
+     * route the callback back to the right plugin.
+     */
+    onLogin(request: LoginRequest): Promise<LoginResponse | void>;
+    /**
+     * Callback method to handle the OAuth callback URL relayed by the host.
+     * Called after the popup redirects back with the full callback URL.
+     */
+    onLoginCallback(request: LoginCallbackRequest): Promise<void>;
+    /**
+     * Callback method to handle logout from the host
+     */
+    onLogout(): Promise<void>;
+    /**
+     * Callback method to check if currently logged in
+     */
+    onIsLoggedIn(): Promise<boolean>;
+    /**
+     * Callback method to upload sync data to cloud storage.
+     * Plugins that define both onSyncUpload and onSyncDownload can be chosen
+     * as the cloud sync provider in Settings.
+     */
+    onSyncUpload(request: SyncUploadRequest): Promise<SyncUploadResponse>;
+    /**
+     * Callback method to download sync data from cloud storage
+     */
+    onSyncDownload(request: SyncDownloadRequest): Promise<SyncDownloadResponse>;
   }
 
   interface PluginInfo {
@@ -676,6 +707,63 @@ declare global {
   }
 
   type Theme = "dark" | "light" | "system";
+
+  interface LoginRequest {
+    apiKey: string;
+    apiSecret: string;
+    /**
+     * Name of the popup window opened by the host.
+     */
+    popupName?: string;
+  }
+
+  interface LoginResponse {
+    /**
+     * URL the host should open in the popup for OAuth.
+     */
+    url?: string;
+  }
+
+  interface LoginCallbackRequest {
+    /**
+     * The full callback URL from the OAuth popup, including query parameters.
+     */
+    url: string;
+  }
+
+  /**
+   * Request to upload document data to cloud storage
+   */
+  interface SyncUploadRequest {
+    /**
+     * Identifies the document; use it to name the file.
+     */
+    docUrl: string;
+    /**
+     * Base64-encoded automerge document
+     */
+    data: string;
+  }
+
+  interface SyncUploadResponse {
+    success: boolean;
+    error?: string;
+  }
+
+  /**
+   * Request to download document data from cloud storage
+   */
+  interface SyncDownloadRequest {
+    docUrl: string;
+  }
+
+  interface SyncDownloadResponse {
+    /**
+     * Base64-encoded automerge document, or null if there is none yet
+     */
+    data: string | null;
+    error?: string;
+  }
 }
 
 export {};
